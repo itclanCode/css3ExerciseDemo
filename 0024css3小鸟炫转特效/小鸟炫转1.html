@@ -1,0 +1,57 @@
+<!doctype html><!--声明当前文档为html文档-->
+<html lang="en"><!--语言为英语-->
+	<head><!--头部-->
+		<meta charset="UTF-8"><!--字符编码：utf-8国际编码  gb2312中文编码-->
+		<meta name="Keywords" content="关键词">
+		<meta name="Description" content="描述">
+		<title>Document</title>
+		<style>/*css样式表的衣柜*/
+		*{margin:0px;padding:0px;}/*去除默认外边距、内边距*/
+		body{background:#27283b;}
+		.bird{width:200px;height:200px;margin:100px auto;position:relative;}
+		.big,.middle,.small{
+			position:absolute;transition: all 0.5s;/*动画过渡*/border-radius:50%;
+			border-style:solid;transform:rotate(45deg);/*旋转*/
+		}
+		.big{border-width:100px;
+			border-color:transparent transparent #d72928 #db3e3d;
+			left:0;top:0;
+			}
+		.middle{border-width:80px;
+		border-color:#f8d245 transparent #f2f2f2 #fff;
+		left:10%;top:10%;}
+
+		.small{border-width:40px;
+		border-color:transparent #f7a703 transparent transparent;
+		left:30%;top:30%;
+		}
+		.small:before{
+			content:"";
+			width:20px;
+			height:20px;
+			border-radius:50%;
+			background:#000;
+			position:absolute;top:-10px;right:20px;
+		}
+
+		.bird:hover .big{
+			transform:rotate(225deg);
+			border-color:transparent transparent #1fe8b6 #16d7a7;
+		}
+		.bird:hover .middle{
+			transform:rotate(-135deg);
+			border-color:transparent #f8d245 #fff #f2f2f2;
+		}
+		.bird:hover .small{
+			transform:rotate(135deg);
+		}
+		</style>
+	</head>
+	<body><!--身体-->
+		<div class="bird">
+			<div class="big"></div>
+			<div class="middle"></div>
+			<div class="small"></div>
+		</div>
+	</body>
+</html>
