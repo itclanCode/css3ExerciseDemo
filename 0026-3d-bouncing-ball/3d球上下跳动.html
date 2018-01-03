@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>3d球上下跳动</title>
+	<style type="text/css">
+		   *{
+		   	  padding:0;
+		   	  margin:0;
+		    }
+		    html{
+		    	height:100%;
+		    }
+		    body{
+		    	background:radial-gradient(#fff,#333);
+		    	height:100%;
+		    }
+			.wrap{
+				width: 100px;
+				position: absolute;
+				bottom: 100px;
+			}
+			.red{
+				left:25%;
+			}
+			.yellow{
+				left:50%;
+			}
+			.black{
+				left:75%;
+			}
+			.shadow,.ball{
+				position:absolute;
+				left:0;
+				top:0;
+				right:0;
+				bottom:0;
+				margin:auto;
+				border-radius:50%;
+			}
+			.shadow{
+				width: 75px;
+				height: 25px;
+				background:#000;
+				border-radius:50%;
+				animation:shadow 600ms cubic-bezier(0.165,0.84,0.44,1.0) infinite;
+			}
+			.ball{
+				width: 60px;
+				height: 60px;
+				background: red;
+				border-radius:50%;
+				text-align:center;
+				line-height:60px;
+				font-size:16px;
+				font-weight:bold;
+				bottom:70px;
+				animation:ball 600ms cubic-bezier(0.165,0.84,0.44,1.0) infinite;/* 自定义动画:名称 时间 速度*/
+			}
+			@keyframes ball{
+                0%{
+                	transform:translateY(0px);
+                }
+                100%{
+                	transform:translateY(-150px);
+                }
+			}
+			@keyframes shadow{
+				0%{
+					transform:scale(0.75); /*缩放比例*/
+					opacity:0.5;
+				}
+				100%{
+					transform:scale(1);
+					opacity:0.1;
+				}
+			}
+			.red .ball{
+				background:radial-gradient(#f00,#ff0);
+				animation-delay:-200ms;/*动画延迟加载*/
+			}
+			.yellow .ball{
+				background:radial-gradient(#ff0,#f00);
+				animation-delay:-200ms; /* 动画延迟加载*/
+			}
+			.black .ball{
+				background:radial-gradient(#fff,#000);
+				animation-delay:0ms;
+			}
+	</style>
+</head>
+<body>
+	   <div class="wrap red">
+	   		<div class="shadow"></div>
+	   		<div class="ball">HTML</div>
+	   </div>
+	   <div class="wrap yellow">
+		   	<div class="shadow"></div>
+		   	<div class="ball">JS</div>
+	   </div>
+	   <div class="wrap black">
+		   	<div class="shadow"></div>
+		   	<div class="ball">html5</div>
+	   </div>
+</body>
+</html>
+<!--
+
+   css3颜色渐变
+   1. 线性渐变 linear-gradient(#fff,#333)
+   2. gradient(linear,left top,left bottom,#fff,#333),从左上角,从左下角
+   3. gradient(circle,#fff,#333);
+   4. gradient(100px,#fff,#333); 半径为100px的正圆
+   5. gradient(100px,50px,#fff,#333);/* 水平半径为100px,垂直半径为50px的椭圆*/
+
+   居中:
+   1. 定位
+   2. margin
+   3. 定位与margin,position:absolute,left:0,top:0,right:0,bottom:0,margin:auto
+   
+   定位:
+   1. static: 默认值 静态定位 元素处于普通文档流(画板)
+
+   2. relative:相对定位 元素框相对于其正常为位置定位,仍然处于普通文档流中(画板),其所占空间依然存在
+
+   3. absolute:绝对定位 元素框从文档流中删除,漂浮起来了,原来所占据的空间删除了,并相对于除了static定位以外的第一父元素定位(临近原则)重要,相对定位和绝对定位通常是配合使用的
+   4. fixed:固定定位 元素框从文档流删除,漂浮起来了,原来所占据的控件删除了,相对于浏览器窗口定位
+   5. animation 自定义动画 cubic-bezier(0,0,1,1)
+
+-->
