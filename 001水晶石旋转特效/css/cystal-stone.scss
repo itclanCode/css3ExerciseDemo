@@ -1,0 +1,74 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	width: 272px;
+	height:400px;
+	margin: 0 auto;
+
+}
+.auto{
+	margin-top: 40px;
+	/* &:checked ~ .rotate{  // 获取所有选中状态的input标签	   animation:clockwise 1s infinite; // 自定义动画:名称 时间 无限重复
+	   animation:clockwise 1s infinite; // 自定义动画:名称 时间 无限重复
+	} */
+}
+.auto-rotate{
+	color:#333;
+	font-weight: bold;
+	font-family: serif;
+}
+span{
+	font-style: 40px;
+	color: #000;
+	font-weight: bold;
+	cursor: pointer;
+	&.anticlockwise{
+		float:left;
+	}
+	&.clockwise{
+		float:right;
+	}
+}
+.rotate{
+	width: 273px;
+	height: 273px;
+	margin: 0 auto;
+	background: url("../img/cystalStone.jpg") no-repeat;
+}
+.auto:checked ~ .rotate{
+	animation:clockwise 1s step(30) infinite;
+}
+.auto:checked ~ span{
+	display:none;
+}
+.anticlockwise:hover ~ .rotate{
+	animation:anticlockwise 1s steps(30) infinite;
+}
+.clockwise:hover ~ .rotate{
+	animation:clockwise 1s step(30) infinite;
+}
+@-webkit-keyframes clockwise{
+	0%{
+		background-position:0 0;
+	}
+	100%{
+		background-position:-8192px 0;
+	}
+}
+@keyframes anticlockwise{
+	0%{
+		background-position:-8192px 0;
+	}
+	100%{
+		background-position:0 0;
+	}
+}
+/* 
+  .auto:checked 获取所有的选中状态的input标签
+  ~:获取到后面的所有兄弟元素
+  把连续的动画放置在同一个位置上播放
+  step(30),把动画分成30个阶段，阶段性的播放
+ */
+

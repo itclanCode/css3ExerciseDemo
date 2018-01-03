@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Keywords" content="关键词">
+    <meta name="Description" content="描述">
+    <title>Document</title>
+    <style id="css">
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .box {
+        width: 800px;
+        height: 360px;
+        margin: 100px auto;
+        position: relative;
+    }
+
+    ul {
+        width: 800px;
+        height: 360px;
+        perspective: 800px;
+        /*3d视镜*/
+    }
+
+    ul li {
+        list-style: none;
+        height: 360px;
+        position: relative;
+        transform: translateZ(-180px) rotateX(0deg);
+        float: left;
+        transform-style: preserve-3d;
+        /*旋转的风格：3d*/
+        /*transition:1s;动画过渡*/
+    }
+
+    ul li div {
+        height: 360px;
+        position: absolute;
+    }
+
+    ul li div:nth-child(1) {
+        top: -360px;
+        transform: translateZ(180px) rotateX(90deg);
+        /*旋转：角度*/
+        transform-origin: bottom;
+        /*旋转中心轴*/
+        background-image: url("img/1.png");
+    }
+
+    ul li div:nth-child(2) {
+        top: 360px;
+        transform: translateZ(180px) rotateX(-90deg);
+        background-image: url("img/2.png");
+        transform-origin: top;
+    }
+
+    ul li div:nth-child(3) {
+        background-image: url("img/3.jpg");
+        transform: translateZ(180px);
+    }
+
+    ul li div:nth-child(4) {
+        transform: translateZ(-180px) rotateX(-180deg);
+        background-image: url("img/4.jpg");
+    }
+
+    ul li div:nth-child(5) {
+        left: -360px;
+        transform: translateZ(180px) rotateY(-90deg);
+        width: 360px;
+        transform-origin: right;
+    }
+
+    ul li div:nth-child(6) {
+        left: 200px;
+        transform: translateZ(180px) rotateY(90deg);
+        width: 360px;
+        transform-origin: left;
+    }
+
+    ol {
+        position: absolute;
+        right: 20px;
+        bottom: 5px;
+    }
+
+    ol li {
+        list-style: none;
+        width: 20px;
+        height: 20px;
+        background: #000;
+        border-radius: 50%;
+        float: left;
+        color: #fff;
+        margin-left: 5px;
+        line-height: 20px;
+        text-align: center;
+        box-shadow: 0 2px 5px #fff;
+        cursor: pointer;
+    }
+    /*ul li:hover{transform:translateZ(-180px) rotateX(-360deg)}*/
+    </style>
+</head>
+
+<body>
+    <!--身体-->
+    <div class="box">
+        <ul>
+        </ul>
+        <ol>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <ol>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script>
+       function rotate(n) {
+        var lw = 800 / n;
+        var html = "",
+            css = "",
+            z = 0;
+        for (var i = 0; i < n; i++) {
+            if (i > n / 2) { z-- } else { z++ }
+            html += "<li><div></div><div></div><div></div><div></div><div></div><div></div></li>";
+            css += "ul li:nth-child(" + (i + 1) + "){transition:1s " + (i * 0.08) + "s all;z-index:" + z + "}ul li:nth-child(" + (i + 1) + ") div{background-position:" + (-i * lw) + "px 0;}";
+        }
+        $("#css").append("ul li{width:" + lw + "px;}ul li div{width:" + lw + "px;}" + css);
+        $("ul").append(html);
+    }
+    rotate(20);
+    $("ol li").click(function() {
+        var a = $(this).index();
+        var b = -a * 90 + "deg";
+        $("ul li").css("transform", "translateZ(-180px) rotateX(" + b + ")");
+    });
+    </script>
+</body>
+
+</html>
