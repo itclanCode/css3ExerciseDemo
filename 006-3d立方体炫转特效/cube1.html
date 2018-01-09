@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Keywords" content="关键词">
+    <meta name="Description" content="描述">
+    <title>3d炫转盒子</title>
+    <style type="text/css">
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+    /*去除默认外边距、内边距*/
+
+    html {
+        background: radial-gradient(ellipse at center, #430d6d 0%, #000 100%);
+        /*颜色径向渐变*/
+        height: 100%;
+    }
+
+    body {
+        height: 20em;
+        width: 20em;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -10em;
+        margin-top: -10em;
+        perspective: 1000px;
+    }
+
+    cube {
+        width: 100%;
+        height: 100%;
+        transform-style: preserve-3d;
+        position: absolute;
+        animation: cube 6s linear infinite;
+        /*自定义动画：名称 时间 匀速 无限重复*/
+    }
+
+    @keyframes cube {
+        /*执行cube这个自定义动画*/
+        from {
+            transform: translateZ(-10em) rotateX(0deg) rotateY(0deg)
+        }
+        to {
+            transform: translateZ(-10em) rotateX(360deg) rotateY(360deg)
+        }
+    }
+
+    cube :not(div) {
+        /*选择到除了div以外的所有元素*/
+        width: 20em;
+        height: 20em;
+        position: absolute;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0px,
+        rgba(54, 226, 248, 0.5) 0%, rgba(54, 226, 248, 0.5) 3px, rgba(0, 0, 0, 0) 0px), linear-gradient(90deg, rgba(0, 0, 0, 0) 0px, rgba(54, 226, 248, 0.5) 0%, rgba(54, 226, 248, 0.5) 3px, rgba(0, 0, 0, 0) 0px);
+        /*水平，垂直*/
+        background-size: 2.5em 2.5em, 2.5em 2.5em;
+        /*水平，垂直*/
+        border: 2px solid rgba(54, 226, 248, 0.5);
+        box-shadow: 0 0 5em rgba(0, 128, 0, 0.4);
+    }
+
+    back {
+        transform: rotateX(180deg) translateZ(10em);
+    }
+
+    bottom {
+        transform: rotateX(-90deg) translateZ(10em)
+    }
+
+    front {
+        transform: rotateX(0deg) translateZ(10em)
+    }
+
+    left {
+        transform: rotateY(-90deg) translateZ(10em)
+    }
+
+    right {
+        transform: rotateY(90deg) translateZ(10em)
+    }
+
+    top {
+        transform: rotateX(90deg) translateZ(10em)
+    }
+
+    div {
+        color: #fff;
+        font-size: 40px;
+        font-weight: bold;
+        text-align: center;
+        line-height: 320px;
+        text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9,
+        0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa;
+        /*左右偏移  上下偏移 模糊度
+颜色*/
+        ;
+    }
+    </style>
+</head>
+
+<body>
+    <!--身体-->
+    <cube>
+        <back></back>
+        <bottom></bottom>
+        <front></front>
+        <left></left>
+        <right></right>
+        <top></top>
+        <div>itclanCoder</div>
+    </cube>
+</body>
+
+</html>
