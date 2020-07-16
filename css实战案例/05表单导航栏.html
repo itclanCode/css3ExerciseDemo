@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>05表单制作选项卡</title>
+<meta name="description" content="" author="随笔川迹" personQQ="1046678249">
+<meta name="keywords" content="" weChatPublicId="itclanCoder">
+<link href="" rel="stylesheet">
+<style type="text/css">
+	     input{
+	     	display:none;
+	     }
+	     span{
+	     	width:80px;
+	     	height:30px;
+	     	border:1px solid #000;
+	     	float:left;
+	     	text-align:center;
+	     	line-height:30px;
+	     	margin-left:-1px;/*解决边框重叠问题*/
+	     	padding:0 5px;
+	     }
+	     input:checked+span{
+	     	background:#000;
+	     	color:#fff;
+	     }
+</style>
+</head>
+<body>
+      <div class="wrap">
+      	    <label>
+      	    	 <input type="radio"  name="nav" checked>
+      	    	 <span>网站首页</span>
+      	    </label>
+      	    <label>
+      	    	<input type="radio" name="nav">
+      	    	<span>公司简介</span>
+      	    </label>
+      	    <label>
+      	    	 <input type="radio" name="nav">
+      	    	 <span>联系我们</span>
+      	    </label>
+      	    <label>
+      	    	  <input type="radio" name="nav">
+      	    	  <span>联系我们</span>
+      	    </label>
+      	    <label>
+      	    	  <input type="radio" name="nav">
+      	    	  <span>下载客户端</span>
+      	    </label>
+      </div>
+</body>
+</html>
