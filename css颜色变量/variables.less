@@ -1,0 +1,3682 @@
+
+//Fonts
+@main-fonts: 'Open Sans', 'Segoe UI'/*rtl:prepend:"Droid Arabic Kufi", "WYekan"*/;
+@number-fonts: 'Open Sans', 'Segoe UI'/*rtl:prepend:"Droid Arabic Kufi", "WYekan"*/;
+@fontawesome-font: 'FontAwesome';
+
+//Theme Colors
+@themeprimary: #2dc3e8;
+@themesecondary: #fb6e52;
+@themethirdcolor: #ffce55;
+@themefourthcolor: #a0d468;
+@themefifthcolor: #e75b8d;
+
+
+//General Colors
+@white: #fff;
+@snow: #fbfbfb;
+@whitesmoke: #f5f5f5;
+@seashell: #f3f3f3;
+@ivory: #eee;
+@platinum: #e5e5e5;
+@lightgray: #d0d0d0;
+@gray: #ccc;
+@darkgray: #999999;
+@silver: #777;
+@sonic-silver: #737373;
+@storm-cloud: #666;
+@lightcarbon: #555;
+@carbon: #444;
+@slate-gray: #333;
+@darkcarbon: #262626;
+@black3: rgba(0, 0, 0, 0.3);
+@black2: rgba(0,0,0,0.2);
+@black: #000;
+@blue: #5DB2FF;
+@info: #57b5e3;
+@sky: #11a9cc;
+@primary: #4374e0;
+@azure: #2dc3e8;
+@blueberry: #6f85bf;
+@palegreen: #a0d468;
+@success: #53a93f;
+@green: #8cc474;
+@lightyellow: #f6d52e;
+@yellow: #ffce55;
+@warning: #f4b400;
+@gold: #f9b256;
+@orange: #fb6e52;
+@darkorange: #ed4e2a;
+@lightred: #e46f61;
+@red: #df5138;
+@danger: #d73d32;
+@pink: #e75b8d;
+@darkpink: #cc324b;
+@magenta: #bc5679;
+@purple: #7e3794;
+@maroon: #981b48;
+
+
+// 基础色值
+// 基础功能色
+@color-a1: #00796A; // message链接色、说明色
+@color-a5: rgba(0, 121, 106, .9);
+@color-a2: #006457;
+@color-a3: #02A096;
+@color-a4: #E7FCF7;
+
+// 成功色
+@color-s1: #35B34A;
+@color-s5: rgba(53, 179, 74, .9);
+@color-s2: #249B42;
+@color-s3: #92D69E;
+@color-s4: #EFF9F1;
+
+// 告警色
+@color-w1: #FFCE03;
+@color-w5: rgba(255, 206, 3, .9);
+@color-w2: #E1A802;
+@color-w3: #FFDA3F;
+@color-w4: #FFFBEB;
+
+// 错误色
+@color-e1: #F54745;
+@color-e5: rgba(245, 71, 69, .9);
+@color-e2: #DE3845;
+@color-e3: #FA9C9A;
+@color-e4: #FEF1F0;
+
+// 链接色
+@color-t1: #0066CC;
+
+// 字体
+@color-c1: #373D41; // 标题、正文、三角符
+@color-c2: #73777A; // 正文、提示
+@color-c3: #9B9EA0; // 提示、帮助、提示图标默认背景、模态框关闭图标、不可用按钮文字
+@color-c4: #C3C4C6; // 不可用
+@color-c5: #FFFFFF; // 大部分选中文字
+
+// 线框
+@color-l1: #CCCCCC; // 分割线、单选／多选按钮边框、步骤条一、默认滚动条、面包屑分隔线、正常开关按钮边框、数量选择器、日历
+@color-l2: #DDDDDD; // 输入框及输入框阴影／表格边框、一级选项卡分隔线、不可用开关按钮边框
+@color-l3: #EEEEEE; // 表格分割线、多选下拉框选分割线
+@color-l4: #D3D5D5; // 按钮normal\hover\disable边框
+@color-l5: #CFD8DC; // 按钮click边框、一般图标默认
+@color-l6: #979A9C; // 按钮／输入框click边框
+
+// 底色、填充色
+@color-b1: #F2F2F2; // 表格title填充、日历选框底色／当前日期选中色、不可用开关按钮
+@color-b2: #F5F7F9; // 列表hover、分步创建页面下一步背景条
+@color-b3: #F5F5F5; // 次按钮Normal、单选／多选按钮disable
+@color-b4: #FAFAFA; // 次按钮Hover
+@color-b5: #F0F0F0; // 次按钮Click
+@color-b6: #E0E0E0; // 不可用输入框／文本框、按钮Disable、步骤条二
+@color-b7: #EBECF0; // 主按钮
+@color-b8: #F0F1F6; // 主按钮
+@color-b9: #E1E2E6; // 主按钮
+@color-b10: #ECF1F7; // 首页region-hover
+@color-b11: #D9DEE5; // 页面内region默认
+@color-b12: #546378; // region选中、胶囊选中
+@color-b13: #979A9C; // 胶囊选中背景、按钮／输入框click边框、不可用箭头或符号
+@color-b14: #FFFFFF; // 白色
+@color-b15: #373D41; // 气泡背景色
+@color-b16: #7A7B7B; // 浅色背景下的滚动条颜色
+
+// 各组件功能色
+// 全局默认样式
+@theme-primary-color: @color-a1; //PAGE title vertical bar, active font, tab bar, 主题色
+@disabled-color: @color-c4; // 不可用状态的字体颜色
+@default-border: @color-l2; // border的颜色：default
+@arrow-color-default: @color-b15; // 小三角箭头的背景色：default
+@arrow-color-disabled: @color-b15; // 小三角箭头的背景色：disabled
+@default-bg: transparent; // 背景色：default（透明）
+@transparent-border: transparent;  // 透明边框
+@box-shadow: rgba(0, 0, 0, 0.24); // 边框阴影(全局)：default
+
+// body
+@body-bg: @color-b7; // body的背景色：default
+// section
+@section-bg: @color-b14; // section的背景色：default
+@content-bg: @color-b14; // content的背景色：default
+
+// 页脚（footer）
+@footer-bg: @color-b7; // 页脚背景色
+@footer-color: @color-c3; // 页脚字体颜色
+
+// 顶栏菜单（NAVBAR TOP）
+@nav-top-bg: #373d42; // 顶栏菜单背景色：default
+@nav-top-hover-bg: #2d3134; // 顶栏菜单背景色：hover
+@nav-top-active-bg: @nav-top-hover-bg; // 顶栏菜单背景色：active
+@nav-top-default-color: #e6e6e6; // 顶栏菜单字体颜色：default
+@nav-top-active-color: @nav-top-default-color; // 顶栏菜单字体颜色：active
+@nav-top-hover-color: @nav-top-default-color; // 顶栏菜单字体颜色：hover
+@nav-top-dropdown-hover-bg: #2a2f32; // 顶栏菜单下拉菜单背景色
+@nav-top-dropdown-active-color: @color-t1; // 顶栏菜单下拉菜单中“历史记录”与“最常访问”文字的active颜色
+
+// 顶部下拉导航菜单
+@nav-default-color: #f2f2f2; // 导航字体颜色：default
+@nav-active-color: @nav-default-color; // 导航字体颜色：active状态
+@nav-screen-drop-bg: #272a2d; // 下拉导航菜单背景色
+@nav-screen-item-hover-bg: @color-a1; // 下拉导航菜单hover状态背景色
+@nav-screen-hr: @color-l1; // 下拉导航菜单分割线
+@nav-screen-item-border: @color-l2; // 下拉导航2级的边框
+
+// 自定义菜单模态框
+@nav-set-bg: #d6d6d6; // 自定义菜单模态框：取消选中的背景色
+@nav-set-default-color: #3e3e3e; // 自定义菜单模态框：default字体颜色
+@nav-set-active-color: #313032; // 自定义菜单模态框：active字体颜色
+@nav-set-icon-color: @color-b14; // 自定义菜单模态框：字体图标颜色
+@nav-set-divide-border: @color-l3; // 自定义菜单模态框：footer的上边框
+
+// 侧边栏
+@common-icon-black: #e6e6e6; // 折叠菜单小三角的颜色
+@sidebar-default-bg: #252a2f; // 侧边栏背景色：default
+@sidebar-menu-config-bg: #182129; // 侧边栏自定义菜单背景色
+@sidebar-menu-config-border: #c3c5c6; // 侧边栏自定义菜单border
+@sidebar-menu-config-color: #c3c5c6; // 侧边栏自定义菜单字体颜色：default
+@sidebar-menu-config-hover-color: @color-a1; // 侧边栏自定义菜单字体颜色：hover
+
+// 一级菜单
+@sidebar-default-color: #ffffff; // 侧边栏字体颜色：default
+@sidebar-hover-bg: #32383E; // 侧边栏菜单背景色：hover
+@sidebar-active-bg: @theme-primary-color; // 侧边栏菜单背景色：active
+@sidebar-hover-color: @sidebar-default-color; // 侧边栏字体颜色：hover
+@sidebar-active-color: @sidebar-default-color; // 侧边栏字体颜色：active
+@sidebar-level2-bg: #182129; // 侧边栏二级菜单背景色：default
+@sidebar-icon-color: @sidebar-default-color; // 侧边栏图标的颜色：default
+@sidebar-icon-color-active: @sidebar-active-color; // 侧边栏图标的颜色：active
+
+// 云数据库等数据库实例详情页
+@nav-inst-infos-bg: @default-bg; //云数据库详情页，侧边栏背景色：default
+@nav-inst-infos-border: @color-l2; // 云数据库详情页，侧边栏border：default
+@nav-inst-infos-default-color: @color-c1; // 云数据库详情页，侧边栏字体颜色：default
+@nav-inst-infos-active-color: @theme-primary-color; // 云数据库详情页，侧边栏字体颜色：active
+@nav-inst-infos-icon-border: @arrow-color-default; // 云数据库详情页，侧边栏下拉三角按钮：default
+@inst-infos-default-bg:         @nav-inst-infos-bg;   // 云数据库详情页，信息栏背景色：default
+@inst-infos-default-border:     @nav-inst-infos-border;   // 云数据库详情页，信息栏边框：default
+
+//config-interface
+@interface-block-bg: @color-b14; // 界面配置的block背景颜色
+@interface-foot-bg: @color-b3; // 界面配置的foot背景颜色
+@interface-body-border: @color-b14; // 界面配置的图片边框颜色
+@interface-block-border: @color-l2; // 界面配置的block边框颜色
+
+//toaster
+@toaster-default-bg: @color-b14; // 全局提示的背景色
+@toaster-default-color: @color-c1; // 全局提示的文字颜色
+@toaster-button-color: @color-c2; // 错误全局提示的右上角叉号颜色
+@toaster-info-img: url("../img/sargasso/toaster/message-info.svg"); // 信息提示左侧图标
+
+//tooltip
+@dark-tooltip-inner-bg:     @color-b15;   //深色气泡主体背景色
+@dark-tooltip-arrow-bg:     @color-b15;   //深色气泡箭头背景色
+@dark-tooltip-inner-color:  @color-b14;   //深色气泡字体颜色
+@light-tooltip-color:       @color-c2;    //浅色气泡字体颜色
+@light-tooltip-bg:          @color-b14;   //浅色气泡背景色
+@light-tooltip-border:      @color-l2;    //浅色气泡边框
+
+// 穿梭框
+// 使用场景：添加角色、资源导入
+@shuttle-box-default-bg: transparent; //穿梭框默认背景色
+@shuttle-box-active-bg: @color-b2; //选择项active状态下背景颜色
+@shuttle-box-active-border: @color-l2; //选择项active状态下边框颜色
+@shuttle-box-default-color: @color-c1; //穿梭框中默认字体颜色
+@shuttle-box-item-border: @color-l2; //穿梭框选项边框颜色
+@shuttle-box-btn-color: @theme-primary-color; //穿梭框中全选按钮字体颜色
+@shuttle-box-info-bg: @shuttle-box-item-border; //穿梭框中选择联系人数提示部分背景色
+@shuttle-box-info-color: @theme-primary-color; //穿梭框中选择联系人数提示部分字体颜色
+//a
+@a-text: @color-t1; // 链接文字字体颜色：default
+@a-hover-color: @color-a2; // 链接文字字体颜色：hover
+
+// dt-dropdown-tree
+@dt-dropdown-tree-bg: @color-b1; // 下拉树背景色
+
+// dropdown
+@dropdown-default-bg: @color-b14; // 下拉列表背景色：default
+@dropdown-hover-bg: @color-b1; // 下拉列表背景色：hover
+@dropdown-active-bg: @color-b1; // 下拉列表背景色：active
+
+@dropdown-default-color: @color-c1; // 下拉列表字体颜色：default
+@dropdown-hover-color: @color-c1; // 下拉列表字体颜色：hover
+@dropdown-active-color: @color-c1; // 下拉列表字体颜色：active
+
+@dropdown-content-border: @color-l4; // 下拉列表边框
+
+@dropdown-cascade-arrow-color: @arrow-color-default; // 下拉列表小箭头的颜色
+@dropdown-btn-color: @color-t1; // 列表操作下拉选的图标颜色
+
+// 多选下拉列表
+@dropdown-selected-list-default-bg: @color-b5; // 多选下拉选中的选中项列表背景色：default
+@dropdown-selected-list-hover-bg: @color-b5; // 多选下拉选中的选中项列表背景色：hover
+@dropdown-selected-list-default-color: @color-c1; // 多选下拉选中的选中项列表字体颜色：default
+@dropdown-selected-list-hover-color: @color-c1; // 多选下拉选中的选中项列表字体颜色：hover
+@dropdown-selected-list-close-btn-color: @color-c1; // 多选下拉选中的选中项列表关闭按钮字体颜色（小叉号
+@dropdown-item-input-bg: @color-b14; // 多选下拉框列表中input背景色：default
+
+// 翻页器
+@table-footer-bg: @default-bg; // 翻页器背景色(默认使用底色)：default
+@pagination-dropdown-icon-color: @color-c3; // 翻页器下拉列表图标的颜色
+@pagination-title-color: @color-c2; // 翻页器title字体颜色
+
+@pagination-color: @color-c1; // 翻页器页码选项字体颜色：default
+@pagination-hover-color: @theme-primary-color; // 翻页器页码选项字体颜色：hover
+@pagination-disabled-color: @color-c4; // 翻页器页码选项字体颜色：disabled
+
+@pagination-active-bg: @theme-primary-color; // 翻页器页码选项背景色：active
+@pagination-disabled-bg: @default-bg; // 翻页器页码选项背景色：disabled
+@pagination-border: @color-l2; // 翻页器页码选项border：default
+@pagination-hover-border: @theme-primary-color; // 翻页器页码选项border：hover
+@pagination-disabled-border: @color-l2; // 翻页器页码选项border：disabled
+
+// 树（tree）
+@tree-color-default: @color-c2; // 树的字体颜色：default
+@tree-color-active: @theme-primary-color; // 树的字体颜色：hover & active
+
+// table
+@table-outer-border: @table-default-border; // table外边框
+@table-default-bg: @color-b14; // table背景色：default
+@table-hover-bg: @color-b2; // table表格背景色：hover
+@table-active-bg: @color-b2; // table表格背景色：active
+@table-head-bg: @color-b1; // table表格头背景色：default
+@table-bg-nodata-tr: @color-b2; // table无数据行背景色：
+@table-default-color: @color-c1; // table字体颜色：default
+@table-hover-color: @color-c1; // table字体颜色：hover
+@table-active-color: @color-c1; // table字体颜色：active
+@table-checkbox-border: @color-l1; // table中checkbox的border：default
+@table-default-border: @color-l2; // table的border
+@table-td-border: @table-default-border; // table的tr/td的border：default
+@table-title-border: @table-default-border; // table-head的border
+@table-report-title-border: @table-title-border; // 系统报表中table-head的border
+@table-sort-arrow-bg: @color-c2; // table中排序小箭头的颜色
+
+//message
+@message-success-bg: @color-s4; //成功提示的背景颜色
+@message-success-text: @color-c2; //成功提示的文字颜色
+@message-success-border: @color-s3; //成功提示的边框颜色
+
+@message-danger-bg: @color-e4; //严重告警提示的背景颜色
+@message-danger-text: @color-c2; //严重告警提示的文字颜色
+@message-danger-border: @color-e3; //严重告警提示的边框颜色
+
+@message-info-bg: @color-a4; //说明提示的背景颜色
+@message-info-text: @color-c2; //说明提示的文字颜色
+@message-info-border: @color-a1; //说明提示的边框颜色
+
+@message-default-bg: rgba(102, 102, 102, .1); //灰色默认提示的背景颜色
+@message-default-text: @color-c2;
+; //灰色默认提示的文字颜色
+@message-default-border: #666666; //灰色默认提示的边框颜色
+
+@message-warning-bg: @color-w4; //告警提示的背景颜色
+@message-warning-text: @color-c2; //告警提示的文字颜色
+@message-warning-border: @color-w3; //告警提示的边框颜色
+
+@message-link-default-color: @color-a1; //告警提示中链接文字颜色
+
+// input框（输入框）
+// normal状态
+@input-bg: @default-bg; // input框背景色: default（使用底色）
+@input-color: @color-c1; // input框字体颜色: default
+@input-border: @color-l2; // input框border: default
+@input-hover-border: @color-l6; // input框border: hover
+@input-active-border: @theme-primary-color; // input框border: active
+@input-disabled-bg: @color-b6; // input框背景色: disabled
+@input-disabled-border: @color-b6; // input框border: disabled
+@input-disabled-color: @color-c3; // input框字体颜色: disabled
+// 其它状态
+@input-placeholder-color: @text-placeholder-color; // input框placeholder字体颜色
+@input-error-color: @color-c1; // input框字体颜色: error
+@input-error-border: @color-e1; // input框border: error
+@input-readonly-border:                @default-bg;   // input框背景色: readonly
+
+// 复选框（checkbox） 与 单选框（radio）的 disable
+@disabled-bg: @color-b6; // 复选框和单选框背景色：disabled
+@disabled-border: @color-l2; // 复选框和单选框 边框：disabled
+// 复选框
+@checkbox-default-bg: @default-bg; // 复选框背景色：default
+@checkbox-default-border: @color-l1; // 复选框边框：default
+@checkbox-default-color: @default-bg; // 复选框字体颜色：default
+
+@checkbox-hover-bg: @default-bg; // 复选框背景色：hover
+@checkbox-hover-border: @theme-primary-color; // 复选框边框：hover
+@checkbox-hover-color: @default-bg; // 复选框字体颜色：hover
+
+@checkbox-active-bg: @theme-primary-color; // 复选框背景色：active
+@checkbox-active-border: @theme-primary-color; // 复选框边框：active
+@checkbox-active-color: @text-active-color; // 复选框字体颜色：active
+
+// 单选框
+@radio-default-bg: @default-bg; // 单选框背景色：default
+@radio-default-border: @color-l1; // 单选框边框：default
+@radio-default-inner-bg: @default-bg; // 单选框填充色：default
+
+@radio-hover-bg: @default-bg; // 单选框背景色：hover
+@radio-hover-border: @theme-primary-color; // 单选框边框：hover
+@radio-hover-inner-bg: @default-bg; // 单选框填充色：hover
+
+@radio-active-bg: @default-bg; // 单选框背景色：active
+@radio-active-border: @theme-primary-color; // 单选框边框：active
+@radio-active-inner-bg: @theme-primary-color; // 单选框填充色：active
+
+// dashboard
+@section-dashboard-bg: @body-bg; //首页大盘背景色
+@dashboard-inner-border: @color-l3; // 首页大盘概览panel中border
+@dashboard-title-color: @color-c1; // 首页大盘概览panel中title的字体颜色
+@dashboard-text-color: @color-c1; // 首页大盘概览panel中text的字体颜色
+@dashboard-rds-text-bg: @color-b4; // 首页大盘概览panel中rds中text的字体颜色
+@dashboard-label-color: @color-c1; // 首页大盘概览panel中label的字体颜色
+@dashboard-overview-count-color: @color-c1; // 首页大盘概览panel中总数的字体颜色
+@dashboard-alarm-label: @color-c2; // 首页大盘告警数图例label字体颜色
+@dashboard-list-cicle-bg: @color-b10; // 首页大盘报警信息列表中序号圆圈的背景色（第4个及以后）
+@dashboard-list-cicle-top-bg: @color-b12; // 首页大盘报警信息列表中序号圆圈的背景色（前3个）
+
+@tips-bg: @color-b14; // 页面右侧tips提示框
+@tips-hide-img:  url('../img/sargasso/tips/tips-btn-left.png');  // 页面右侧tips提示框图片：hidden
+@tips-show-img:  url('../img/sargasso/tips/tips-btn-right.png');  // 页面右侧tips提示框图片：show
+
+// 开关主体
+@switch-default-bg: @color-b7; // switch开关背景色：default
+@switch-active-bg: @color-s1; // switch开关背景色：active
+@switch-default-border: @color-l1; // switch开关边框颜色：default
+
+// 开关按钮
+@switch-button-default-bg: @color-b8; // switch开关按钮背景色：default
+@switch-button-default-border: @color-l1; // switch开关按钮边框颜色：default
+
+// 开关不可用状态
+@switch-disabled-bg: @color-b6; // switch开关背景色：disabled
+@switch-disabled-border: @color-l3; // switch开关边框颜色：disabled
+@switch-button-disabled-bg: @color-b6; // switch开关按钮背景色：disabled
+@switch-button-disabled-border: @color-l3; // switch开关按钮边框颜色：disabled
+
+//text-color
+@text-color-first: @color-c1; // 字体颜色：大标题
+@text-color-second: @color-c2; // 字体颜色：标题
+@text-color-third: @color-c3; // 字体颜色：正文
+
+@text-title-color: @color-c1; // 字体颜色：大标题
+@text-subtitle-color: @color-c2; // 字体颜色：标题
+@text-content-color: @color-c3; // 字体颜色：正文
+@text-active-color: @color-c5; // 字体颜色：active(背景色为非主题色时，选中状态的字体颜色)
+@text-disabled-color: @color-c4; // 字体颜色：disabled
+@text-placeholder-color: @color-c2; // 字体颜色：placeholder
+@text-danger-color: @color-e1; // 字体颜色：危险
+@text-success-color: @color-s1; // 字体颜色：成功
+@text-creating-color: @color-a1; // 字体颜色：创建
+
+//btn
+// 主题按钮
+@btn-primary-default-bg: @color-a1; // 主题按钮背景色：default
+@btn-primary-hover-bg: @color-a3; // 主题按钮背景色：hover
+@btn-primary-active-bg: @color-a2; // 主题按钮背景色：active
+
+@btn-primary-default-color: @color-c5; // 主题按钮字体颜色：default
+@btn-primary-hover-color: @color-c5; // 主题按钮字体颜色：hover
+@btn-primary-active-color: @color-c5; // 主题按钮字体颜色：active
+
+@btn-primary-default-border: @btn-primary-default-bg; // 主题按钮边框：default
+@btn-primary-hover-border: @btn-primary-hover-bg; // 主题按钮边框：hover
+@btn-primary-active-border: @btn-primary-active-bg; // 主题按钮边框：active
+
+// 危险按钮
+@btn-danger-default-bg: @color-b3; // 危险按钮背景色：default
+@btn-danger-hover-bg: @color-e1; // 危险按钮背景色：hover
+@btn-danger-active-bg: @color-e3; // 危险按钮背景色：active
+
+@btn-danger-default-color: @color-c1; // 危险按钮文字颜色：default
+@btn-danger-hover-color: @text-active-color; // 危险按钮文字颜色：hover
+@btn-danger-active-color: @color-c5; // 危险按钮文字颜色：active
+
+@btn-danger-default-border: @color-l4; // 危险按钮border颜色：default
+@btn-danger-hover-border: @color-e1; // 危险按钮border颜色：hover
+@btn-danger-active-border: #F54745; // 危险按钮border颜色：active
+
+// 普通按钮（主按钮-中、小尺寸），中尺寸按钮使用场景：模态框，小尺寸按钮使用场景：提示框
+@btn-default-bg: @color-b7; // 主按钮（中、小尺寸）背景色：default
+@btn-default-hover-bg: @color-b8; // 主按钮（中、小尺寸）背景色：hover
+@btn-default-active-bg: @color-b9; // 主按钮（中、小尺寸）背景色：active
+
+@btn-default-color: @color-c1; // 主按钮（中、小尺寸）背景色：default
+@btn-default-hover-color: @color-c1; // 主按钮（中、小尺寸）背景色：hover
+@btn-default-active-color: @color-c1; // 主按钮（中、小尺寸）背景色：active
+
+@btn-default-border: @btn-default-bg; // 主按钮（中、小尺寸）border：default
+@btn-default-hover-border: @btn-default-hover-bg; // 主按钮（中、小尺寸）border：hover
+@btn-default-active-border: @btn-default-active-bg; // 主按钮（中、小尺寸）border：active
+
+//普通按钮（主按钮-大尺寸），使用场景：创建页
+@btn-default-large-bg: @color-b3; // 主按钮(大尺寸)背景色：default
+@btn-default-large-hover-bg: @color-b4; // 主按钮(大尺寸)背景色：hover
+@btn-default-large-active-bg: @color-b5; // 主按钮(大尺寸)背景色：active
+
+@btn-default-large-color: @color-c1; // 主按钮(大尺寸)字体颜色：default
+@btn-default-large-hover-color: @color-c1; // 主按钮(大尺寸)字体颜色：hover
+@btn-default-large-active-color: @color-c1; // 主按钮(大尺寸)字体颜色：active
+
+@btn-default-large-border: @color-l4; // 主按钮(大尺寸)边框：default
+@btn-default-large-hover-border: @color-l4; // 主按钮(大尺寸)边框：hover
+@btn-default-large-active-border: @color-l6; // 主按钮(大尺寸)边框：active
+
+// 普通按钮（次按钮）,使用场景：列表页
+@btn-secondary-bg: @color-b3; // 普通按钮(次按钮)背景色：default
+@btn-secondary-hover-bg: @color-b4; // 普通按钮(次按钮)背景色：hover
+@btn-secondary-active-bg: @color-b5; // 普通按钮(次按钮)背景色：active
+
+@btn-secondary-color: @color-c1; // 普通按钮(次按钮)字体颜色：default
+@btn-secondary-hover-color: @color-c1; // 普通按钮(次按钮)字体颜色：hover
+@btn-secondary-active-color: @color-c1; // 普通按钮(次按钮)字体颜色：active
+
+@btn-secondary-border: @color-l4; // 普通按钮(次按钮)边框：default
+@btn-secondary-hover-border: @color-l4; // 普通按钮(次按钮)边框：hover
+@btn-secondary-active-border: @color-l6; // 普通按钮(次按钮)边框：active
+
+// 按钮disabled状态（主按钮大尺寸、次按钮）
+@btn-disabled-bg: @color-b6; // 主按钮大尺寸、次按钮（显式边框）背景色：disabled
+@btn-disabled-color: @color-c3; // 主按钮大尺寸、次按钮（显式边框）字体颜色：disabled
+@btn-disabled-border: @color-l4; // 主按钮大尺寸、次按钮（显式边框）边框：disabled
+
+// 按钮disabled状态（主按钮中、小尺寸）
+@btn-default-disabled-bg: @color-b6; // 主按钮中、小尺寸（隐式边框）背景色：disabled
+@btn-default-disabled-color: @color-c3; // 主按钮中、小尺寸（隐式边框）字体颜色：disabled
+@btn-default-disabled-border: @btn-default-disabled-bg; // 主按钮中、小尺寸（隐式边框）边框：disabled
+
+// bk-button（区域、产品等按钮组）
+@bk-btn-bg: transparent; // 按钮组背景色：default
+@bk-btn-color: @color-c2; // 按钮组字体颜色：default
+@bk-btn-border: @color-l1; // 按钮组边框：default
+
+@bk-btn-hover-bg: transparent; // 按钮组背景色：hover
+@bk-btn-hover-color: @theme-primary-color; // 按钮组字体颜色：hover
+@bk-btn-hover-border: @theme-primary-color; // 按钮组边框：hover
+
+@bk-btn-current-bg: @theme-primary-color; // 按钮组背景色：active
+@bk-btn-current-color: @text-active-color; // 按钮组字体颜色：active
+@bk-btn-current-border: @theme-primary-color; // 按钮组边框：active
+
+// 滚动条（scrollbar）
+@scrollbar-default-bg: @color-b16; // 滚动条背景色：全局
+@scrollbar-nav-bg: rgba(255, 255, 255, 0.40); // 滚动条背景色：导航菜单
+
+// 滑块（slider）
+@slider-handle-bg: @color-b8; // 滑块按钮背景色
+@slider-track-bg: @color-b7; // 滑块背景色：default
+@slider-selection-bg: @theme-primary-color; // 滑块背景色：active
+
+// tab选项卡：一级
+@tab-content-bg: @default-bg; // 选项卡视图背景色：底色
+@tab-default-color: @text-title-color; // 选项卡字体颜色：default
+@tab-default-border: @color-l1; // 选项卡边框
+@tab-default-bg: @default-bg; // 选项卡tab背景色：底色
+@tab-separator-border: @color-l2; // 选项卡分隔线
+@tab-level1-active-color: @theme-primary-color; // 选项卡字体颜色：ative
+@tab-level1-active-border: @theme-primary-color; // 选项卡边框：ative
+@tab-level1-active-bg: @default-bg; // 选项卡tab背景色：底色
+
+// tab选项卡：二级
+@tab-level2-default-color: @color-c1; // 二级选项卡字体颜色：default
+@tab-level2-hover-color: @tab-level2-default-color; // 二级选项卡字体颜色：hover
+@tab-level2-active-color: @text-active-color; // 二级选项卡字体颜色：active
+@tab-level2-disabled-color: @color-c3; // 二级选项卡字体颜色：disabled
+
+@tab-level2-active-bg: @color-b13; // 二级选项卡背景色：active
+@tab-level2-disabled-bg: @color-b6; // 二级选项卡背景色：disabled
+
+@tab-level2-default-border: @color-l4; // 二级选项卡边框：default
+@tab-level2-hover-border: @color-l6; // 二级选项卡边框：hover
+@tab-level2-active-border: @tab-level2-active-bg; // 二级选项卡边框：active
+@tab-level2-disabled-border: @color-l4; // 二级选项卡边框：disabled
+
+// tab选项卡：三级
+@tab-level3-active-color: @theme-primary-color; // 三级选项卡字体颜色：hover & active
+@tab-level3-active-border: @theme-primary-color; // 三级选项卡边框：hover & active
+
+// tab选项卡：Region tab
+@tab-region-default-bg: @color-b11; // region选项卡背景色：default
+@tab-region-hover-bg: @tab-region-default-bg; // region选项卡背景色：hover
+@tab-region-active-bg: @color-b12; // region选项卡背景色：active
+@tab-region-default-color: @color-c2; // region选项卡字体颜色：default
+@tab-region-hover-color: @color-c1; // region选项卡字体颜色：hover
+@tab-region-active-color: @text-active-color; // region选项卡字体颜色：active
+
+// 首页大盘中的区域tab切换
+@tab-dashboard-default-bg: @default-bg; //dashboad中的tab背景色：default
+@tab-dashboard-hover-bg: @color-b10; //dashboad中的tab背景色：hover
+@tab-dashboard-active-bg: @color-b12; //dashboad中的tab背景色：active
+@tab-dashboard-default-color: @color-c1; //dashboad中的tab字体颜色：default
+@tab-dashboard-hover-color: @tab-dashboard-default-color; //dashboad中的tab字体颜色：hover
+@tab-dashboard-active-color: @text-active-color; //dashboad中的tab字体颜色：active
+
+// panel
+@panel-bg: @color-b14; // panel的背景色：default
+@middle-panel-bg: @section-bg; // panel的背景色：中间件
+
+// help-block
+@help-block-default-color: @color-c3; // 提示信息字体颜色（常用于创建页）
+
+//步骤条
+
+@step-bg: @color-b6; // 步骤条外部背景颜色
+@step-after-color: @color-c5; // 未进行到步骤右方突出三角颜色
+@step-color: @color-c2; // 未进行到步骤条字体颜色
+@step-pass-bg: @color-a4; // 步骤条 pass 状态下背景颜色
+@step-pass-color: @color-c3; // 步骤条 pass 状态下字体颜色
+@step-active-bg: @color-a1; // 步骤条 active 状态背景颜色
+@step-active-color: @color-c5; // 步骤条 active 状态字体颜色
+
+@step-modal-bg: @modal-bg; // 模态框中步骤条外部背景颜色
+@step-modal-border: @color-l1; // 模态框中未进行到步骤条边框颜色
+@step-modal-color: @color-c2; // 模态框中未进行到步骤条字体颜色
+@step-modal-pass-color: @color-a1; // 模态框中步骤条 pass 状态下字体颜色
+@step-modal-pass-border: @color-a1; // 模态框中步骤条 pass 状态下边框颜色
+@step-modal-active-bg: @color-a1; // 模态框中步骤条 active 状态背景颜色
+@step-modal-active-color: @color-c5; // 模态框中步骤条 active 状态字体颜色
+
+// 资源申请step
+@apply-bg: @color-b4;
+@apply-step-bg: @color-b7;
+@apply-step-color: @color-c2;
+@apply-step-active-bg: @color-a1;
+@apply-step-active-color: @color-c5;
+@apply-step-active-bottom: transparent;
+
+@rsc-bg:                          @color-a2;       //云产品管理、产品概览背景色
+@rsc-color:                       @color-c5;       //云产品管理、产品概览字体颜色
+
+// 监控指标按钮
+@monitor-button-bg: transparent;
+@monitor-button-active-bg: @color-b4;
+
+//场景类页面
+// modal-模态框（对话框）
+@modal-title-color: @text-title-color; // 模态框字体颜色：title
+@modal-label-color: @color-c2; // 模态框字体颜色：label
+@modal-default-color: @color-c1; // 模态框字体颜色：default
+@modal-table-head-bg: @color-b1; // 模态框中表格背景色：title
+@modal-close-color: @color-c3; // 模态框中右上角叉号颜色
+@modal-close-hover-color: @color-c3; // 模态框中右上角叉号hover颜色
+@modal-bg: @color-b14; // 模态框背景色
+
+//创建页（create-case）
+@create-case-bg: @content-bg; // 创建页面背景色
+@create-case-label-color: @text-subtitle-color; // 创建页label字体颜色
+@create-case-title-color: @text-title-color; // 创建页项Title字体颜色
+@create-case-dl-border: @color-l1; // 创建页分隔线框
+
+// 详情页 - detail
+@detail-bg: @section-bg; // 详情页背景色
+@detail-title-color: @text-title-color; // 详情页title字体颜色
+@detail-divide-border: @color-l1; // 详情页分割线
+@detail-list-default-border: @color-l4; // 详情页未知边框
+
+// 特殊页面
+// 系统配置 —> license管理
+@licence-default-bg: @color-b1; // licence块背景色：未购买
+@licence-active-bg: @default-bg; // licence块背景色：已购买
+@licence-default-border: @color-l2; // licence块边框：未购买
+@licence-active-border: @theme-primary-color; // licence块边框：已购买
+@licence-active-img: url('../img/sargasso/page/licence-active.png'); //licence已购买状态图片
+@licence-default-img: url('../img/sargasso/page/licence-default.png'); //licence未购买状态图片
+
+//云监控中心
+@summary-modules-border:                          @color-l2;    //云监控中心边框
+@monitor-panel-head-bg:                           @color-b2;    //云监控中心卡片标题部分背景颜色
+@monitor-panel-bg:                                @default-bg;  //云监控中心卡片背景颜色
+@monitor-panel-border:                            rgba(0,0,0,0.4); //云监控中心边框阴影
+@pie-chat-default-bg:                             @color-b14; //饼状图最里面小圈背景颜色
+@pie-chat-inner-border:                           @color-l1;  //饼状图中间圆环颜色
+@pie-chat-out-border:                             @color-b3; //饼状图最外边框颜色
+
+// ecs dashboard
+@dashboard-ecs-panel-heading-pl:   5px;    // ecs dashboard中的panel-heading的padding-left
+
+//ram管理-->创建授权策略中间分割线
+@ram-defalt-border:                           @color-l5;    //步骤条第二步中间分割线
+
+//配额管理
+@quota-title-bg:                      @color-b1;   //配额管理页面标题背景颜色
+@quota-title-color:                   @color-c1;   //配额管理页面标题颜色
+@quota-body-bg:                       @color-b4;   //配额管理页面背景颜色
+
+//个人信息页面
+@user-info-active-bg:               @color-b2;
+@user-info-default-color:           @color-c1;
+@user-info-active-color:            @color-c5;
+@user-info-border:                  @color-l2;
+@user-info-default-border:          @color-l3;
+
+//资源通知配置页分割线
+@system-config-border:           @color-l3;
+
+@monitor-text-color:            @color-c2;
+@monitor-text-hover-bg:         @color-b12;
+@monitor-text-hover-color:      @color-c5;
+@monitor-table-border:          @color-c1;
+
+@overview-module-bg: @color-c1;
+@overview-detail-bg: @color-c1;
+@overview-detail-bar-bg: @color-a2;
+
+// inventory
+@inventory-module-bg: @color-b4;
+@inventory-module-title-bg: @color-b1;
+@inventory-progress: @color-b2;
+
+// ros
+@ros-exam-bg: @color-b4;
+// elastic
+@elastic-bg: @color-b4;
+@elastic-border: @color-l1;
+
+// rsc-use-list
+@rsc-use-border: @color-l2;
+
+@theme-font-family: MicrosoftYaHei;
+
+// 开发者面板
+@offsidebar-bg: @modal-bg; // 开发者面板背景色
+@offsidebar-border-color: greyscale(darken(@offsidebar-bg, 20%)); // 开发者面板边框
+@offsidebar-color: @text-title-color; // 开发者面板字体颜色
+@offsidebar-divide-border: @color-l2; // 开发者面板分割线
+
+//used to define font weight 200
+@font-yahei-light: 200;
+
+@bk-form-row-border:                      @color-l5;
+
+//siderbarWidth
+@siderbar-width: 160px;
+
+// 日期下拉框
+@calendar-default-bg: @color-c5; //日期下拉框的背景色
+@calendar-default-border: @color-l2; //日期下拉框的边框颜色
+@calendar-default-color: @color-c2; //日期下拉框字体颜色
+
+@calendar-disabled-color: @color-c4; //日期下拉框禁选部分字体颜色
+@calendar-disabled-bg:  @default-bg; //日期下拉框禁选部分背景色
+
+@calendar-hover-bg: @theme-primary-color; //日期下拉框hover状态下背景色
+@calendar-hover-color: @color-c5; //日期下拉框hover状态下字体颜色
+
+@calendar-active-color: @color-c5; //日期下拉框active状态下字体颜色
+@calendar-active-bg: @theme-primary-color; //日期下拉框active状态下背景色
+@calendar-tr-hover-bg: @color-b5; //日期下拉框hover状态下整行背景色
+
+@calendar-range-default-bg: @calendar-default-bg; //日期区间弹出框背景色
+@calendar-range-active-bg: @color-a4; //日期下拉框选中区间的背景色
+
+// 未知作用的颜色变量
+@menu-hover: @color-t1;
+@menu-tooltip: @nav-screen-item-border;
+
+
+//NAT网关 -> 实例详情 —> 带宽包 中的 带宽包列表
+@card-head-default-bg:            @color-b14;   // 带宽包卡片列表的表头背景色
+
+//NAT网关 -> 实例详情 —> 带宽包 中的 添加带宽包
+@card-add-default-bg:                @color-b14;        //上传卡片背景色
+@card-add-default-border:            @color-l2;         //上传卡片边框颜色
+@card-add-default-color:             @color-c1;         //上传卡片加号颜色
+
+//  slb—> 证书管理 —> 上传安全证书 中“参考示例”按钮
+@btn-dtcompact-active-border:         @color-l1;          // 边框：active
+@btn-dtcompact-active-color:          @color-c2;          // 字体颜色：active
+@btn-dtcompact-active-bg:             @default-bg;        // 背景色：active
+
+@btn-dtcompact-default-border:         @btn-default-border;         // 边框：default
+@btn-dtcompact-default-color:          @btn-default-color;          // 字体颜色：default
+@btn-dtcompact-default-bg:             @btn-default-bg;             // 背景色：default
+@page-title-default-color:            @text-title-color;           // 面包屑字体颜色
+
+@loading-mask-bg:          @color-b5;     // 加载动画模块的背景色
+@loading-blockui-img:        url("../img/loading-1.gif");     // 加载动画：blockUI
+@loading-dashboard-img:      url("../img/loading-andaman.gif");     // 加载动画：首页大盘
+
+@well-bg:                         @default-bg;   // well的背景色：default
+@btn-oval-border:                 @color-l1;     // 部门管理中树上面的按钮边框：default
+@btn-oval-hover-border:           @color-l4;     // 部门管理中树上面的按钮边框：hover
+
+
+
+// 
+// Variables to change general look 
+// 
+
+// LAYOUT
+
+//@content-bg:                    #f2f2f2;
+
+@content-bg:                    #EFF2F5;
+@aside-bg:                      #ffffff;
+// NAVBAR TOP
+
+@nav-top-bg:                    #373d41;
+@nav-top-bg-color:              darken(@nav-top-bg, 4%);
+@nav-top-hover-bg:              #2a2f32; //@nav-top-bg;
+@nav-top-bg-start:              @nav-top-bg;
+@nav-top-bg-end:                @nav-top-bg;
+@nav-header-bg:                 @nav-top-bg;
+
+@nav-top-item-mobile:           #fff;
+@nav-top-item-mobile-active:    darken(@nav-top-item-mobile, 20%);
+
+@nav-top-item-desktop:          #fff;
+@nav-top-item-desktop-active:   darken(@nav-top-item-desktop, 20%);
+
+// SIDEBAR
+
+@sidebar-bg:                      @aside-bg;
+
+@sidebar-item-color:              #333333;
+@sidebar-item-color-active:       #00a8e2;
+@sidebar-item-bg-active:          #f4f4f4;
+@sidebar-item-collapse:           #374251;
+
+@sidebar-icon-color:              @sidebar-item-color;
+@sidebar-icon-color-active:       @sidebar-item-color-active;
+
+@sidebar-bullet-color:            rgba(0,0,0,.25);
+@sidebar-bullet-color-active:     @sidebar-icon-color-active;
+
+@sidebar-heading-color:           #919DA8;
+@sidebar-label-color:             @sidebar-item-color;
+
+// OFFSIDEBAR
+
+@offsidebar-bg:                   #fff;
+@offsidebar-border-color:         greyscale(darken(@offsidebar-bg, 20%));
+@offsidebar-color:                @text-color;
+
+//PAGE title vertical bar, active font, tab bar
+@theme-m-primary:                 #00a8e2;
+
+//table first line background
+@table-head-bg:                   #edeff3;
+@pagination-acitve-bg:            #f7f7f7;
+
+//used to define font weight 200
+@font-yahei-light:                200;
+
+//siderbarWidth
+@siderbar-width: 180px;
+
+
+//Level of alert box
+@alert-success-bgd: rgba(19,162,4,0.10);
+@alert-success-ft: #13a204;
+
+
+@alert-info-bgd: rgba(0,176,236,0.10);
+@alert-info-ft: #00b0ec;
+
+@alert-warning-bgd: rgba(255,169,90,0.10);
+@alert-warning-ft: #ffa95a;
+
+@alert-danger-bgd: rgba(237,53,105,0.10);
+@alert-danger-ft: #ed3569;
+
+// create-case
+@theme-m-bk-color:                #666666;
+@theme-m-bk-border:               #dddddd;
+@theme-m-bk-bg:                   transparent;
+@theme-m-bk-color-active:         #00b0ec;
+@theme-m-bk-border-active:        #00b0ec;
+
+
+@pagination-acitve-bg:            #f7f7f7;
+@pagination-hover-border:         #00C1DE;
+@pagination-hover:                #00C1DE;
+@pagination-border:               #d7d8d9;
+@pagination-disabled-border:      #d7d8d9;
+@pagination-disabled:             #d7d8d9;
+
+//text-color
+@text-color-first:                #373d41; //#333
+@text-color-second:               #73777a; //#666
+@text-color-third:                #9b9ea0; //#999
+
+@theme-primary-color:             #00b0ec; // mexo 主题色
+
+@shuttle-to-btn-bg:               #e0e0e0; // 穿梭框向左/右按钮未激活背景色
+
+
+// 
+// Variables to change general look 
+//
+// LAYOUT
+// 基础功能色
+@color-a1:                      #0070CC;      // message链接色、说明色
+@color-a5:                      rgba(0, 112, 204, .9);
+@color-a2:                      #3399FF;
+@color-a3:                      #06589F;
+@color-a4:                      #142035;
+
+// 成功色
+@color-s1:                      #52C41A;
+@color-s5:                      rgba(82, 196, 26, .9);
+@color-s2:                      #82E650;
+@color-s3:                      #44981A;
+@color-s4:                      #24392B;
+
+// 告警色
+@color-w1:                      #FAAD14;
+@color-w5:                      rgba(250, 173, 20, .9);
+@color-w2:                      #F6C704;
+@color-w3:                      #CD8F13;
+@color-w4:                      #5B441D;
+
+// 错误色
+@color-e1:                      #F52933;
+@color-e5:                      rgba(245, 41, 51, .9);
+@color-e2:                      #F95C5B;
+@color-e3:                      #D30F19;
+@color-e4:                      #391725;
+
+// 链接色
+@color-t1:                      #3399FF;
+
+// 字体
+@color-c0:                      #FFFFFF;      // 标题、topbar文字、大部分选中文字
+@color-c1:                      #DBDBDE;      // 标题、正文、三角符、侧边菜单栏默认文字
+@color-c2:                      #ABACB1;      // 正文、提示
+@color-c3:                      #7C7D85;      // 提示、帮助、提示图标默认背景、模态框关闭图标、不可用按钮文字、面包屑
+@color-c4:                      #5C5E67;      // 不可用
+
+// 线框
+// 分割线、单选、多选按钮边框、步骤条样式一灰、面包屑分隔线、按钮normal边框、...、数量选择器、输入框hover、一级选项卡横线、胶囊型按钮
+@color-l1:                      #7C7D85;
+@color-l2:                      #4C4E59;      // 输入框...／表格边框、一级选项卡分隔线、日历边框、翻页器、穿梭框边框
+@color-l3:                      #343742;      // 表格分割线、标题等分割线
+@color-l4:                      #DBDBDE;      // 按钮hover边框
+@color-l5:                      #ABACB1;      // 按钮click边框、一般图标默认
+@color-l6:                      #1D1F2D;      // 表头分割线
+
+// 底色、填充色
+@color-b0:                      #1D1f2D;      // 页脚背景色
+@color-b1:                      #272A3B;      // 表格title填充、卡片背景上的背景色/标题色、日历下拉框背景、下拉菜单背景、气泡背景
+@color-b2:                      #343742;      // 列表hover、日历日期hover色、表格内容为空时的背景色
+
+//@color-b3:                      #F5F5F5;      // 次按钮Normal、单选／多选按钮disable
+@color-b4:                      #1F2233;      // 卡片背景
+@color-b5:                      #111422;      // 底色
+@color-b6:                      #262935;      // 不可用输入框／文本框翻页器、按钮Disable、单选/多选按钮Disable
+@color-b7:                      #4C4E59;      // 不可用箭头/符号、步骤条样式二灰
+@color-b8:                      #ABACB1;      // 箭头/符号默认
+@color-b9:                      #DBDBDE;      // 箭头/符号hover
+@color-b10:                     #323B4C;      // 首页region-hover
+//@color-b11:                     #D9DEE5;      // 页面内region默认
+@color-b12:                     #546378;      // region选中、胶囊选中
+//@color-b13:                     #989A9C;      // 胶囊选中背景、按钮／输入框click边框、不可用箭头或符号
+@color-b14:                     #FFFFFF;      // 白色
+@color-b15:                     #40434E;       //禁选单选多选按钮
+
+// 各组件功能色
+// 全局默认样式
+@theme-primary-color:                  @color-a1;    //PAGE title vertical bar, active font, tab bar, 主题色
+@disabled-color:                       @color-c4;    // 不可用状态的字体颜色
+@default-border:                       @color-l2;    // border的颜色：default
+@arrow-color-default:                  @color-b15;   // 小三角箭头的背景色：default
+@arrow-color-disabled:                 @color-b15;   // 小三角箭头的背景色：disabled
+@default-bg:                           transparent;  // 背景色：default（透明）
+@transparent-border:                   transparent;  // 透明边框
+@box-shadow:                           rgba(0,0,0,0.45); // 边框阴影(全局)：default
+
+// body
+@body-bg:                              @color-b5;  // body的背景色：default
+
+// section
+@section-bg:                           @color-b5;  // section的背景色：default
+@content-bg:                           @color-b5;  // content的背景色：default
+@modal-bg:                             @color-b4;  // 模态框背景色：default
+
+// 页脚（footer）
+@footer-bg:                            @color-b0;  // 页脚背景色
+@footer-color:                         @color-c3;  // 页脚字体颜色
+
+// 顶栏菜单（NAVBAR TOP）
+@nav-top-bg:                           #1D2237;       // 顶栏菜单背景色：default
+@nav-top-hover-bg:                     #282D41;       // 顶栏菜单背景色：hover
+@nav-top-active-bg:                    @nav-top-hover-bg;       // 顶栏菜单背景色：active
+@nav-top-default-color:                @color-c1;               // 顶栏菜单字体颜色：default
+@nav-top-active-color:                 @nav-top-default-color;  // 顶栏菜单字体颜色：active
+@nav-top-hover-color:                  @nav-top-default-color;  // 顶栏菜单字体颜色：hover
+@nav-top-dropdown-hover-bg:            @dropdown-default-bg;    // 顶栏菜单下拉菜单背景色
+@nav-top-dropdown-active-color:        @color-t1;     // 顶栏菜单下拉菜单中“历史记录”与“最常访问”文字的active颜色
+
+
+// 顶部下拉导航菜单
+@nav-default-color:                    @nav-top-default-color; // 导航字体颜色：default
+@nav-active-color:                     @nav-default-color;  // 导航字体颜色：active状态
+@nav-screen-drop-bg:                   #15192A;             // 下拉导航菜单背景色
+@nav-screen-item-hover-bg:             @theme-primary-color;// 下拉导航菜单hover状态背景色
+@nav-screen-hr:                        @color-l1;    // 下拉导航菜单分割线
+@nav-screen-item-border:               @color-l2;    // 下拉导航2级的边框
+
+// 自定义菜单模态框
+@nav-set-bg:                           #4c4e59;       // 自定义菜单模态框：取消选中的背景色
+@nav-set-default-color:                @color-c1;     // 自定义菜单模态框：default字体颜色
+@nav-set-active-color:                 @color-c1;     // 自定义菜单模态框：active字体颜色
+@nav-set-icon-color:                   @color-b14;    // 自定义菜单模态框：字体图标颜色
+@nav-set-divide-border:                @color-l3;     // 自定义菜单模态框：footer的上边框
+
+// 侧边栏
+@common-icon-black:                   @color-l1;    // 折叠菜单小三角的颜色
+@sidebar-default-bg:                  #1D2237;      // 侧边栏背景色：default
+@sidebar-menu-config-bg:              #29304C;      // 侧边栏自定义菜单背景色
+@sidebar-menu-config-border:          translate;    // 侧边栏自定义菜单border
+@sidebar-menu-config-color:           @color-c1;    // 侧边栏自定义菜单字体颜色：default
+@sidebar-menu-config-hover-color:     @theme-primary-color;    // 侧边栏自定义菜单字体颜色：hover
+
+// 一级菜单
+@sidebar-default-color:               @nav-default-color;       // 侧边栏字体颜色：default
+@sidebar-hover-bg:                    #2A2D3C;                  // 侧边栏菜单背景色：hover
+@sidebar-active-bg:                   @theme-primary-color;     // 侧边栏菜单背景色：active
+@sidebar-hover-color:                 @sidebar-default-color;   // 侧边栏字体颜色：hover
+@sidebar-active-color:                @sidebar-default-color;   // 侧边栏字体颜色：active
+@sidebar-level2-bg:                   #151929;                  // 侧边栏二级菜单背景色：default
+@sidebar-icon-color:                  @sidebar-default-color;   // 侧边栏图标的颜色：default
+@sidebar-icon-color-active:           @sidebar-active-color;    // 侧边栏图标的颜色：active
+
+// 云数据库等数据库实例详情页
+@nav-inst-infos-bg:                   @color-b5;    // 云数据库详情页，侧边栏背景色：default
+@nav-inst-infos-border:               @color-l1;      // 云数据库详情页，侧边栏border：default
+@nav-inst-infos-default-color:        @color-c2;      // 云数据库详情页，侧边栏字体颜色：default
+@nav-inst-infos-active-color:         @theme-primary-color; // 云数据库详情页，侧边栏字体颜色：active
+@nav-inst-infos-icon-border:          @color-c1; // 云数据库详情页，侧边栏下拉三角按钮：default
+@inst-infos-default-bg:               @color-b4;   // 云数据库详情页，信息栏背景色：default
+@inst-infos-default-border:           trasparent;   // 云数据库详情页，信息栏边框：default
+
+// 开发者面板
+@offsidebar-bg:                        @modal-bg;          // 开发者面板背景色
+@offsidebar-border-color:              greyscale(darken(@offsidebar-bg, 20%));   // 开发者面板边框
+@offsidebar-color:                     @text-title-color;   // 开发者面板字体颜色
+@offsidebar-divide-border:             @color-l2;           // 开发者面板分割线
+
+//PAGE title vertical bar, active font, tab bar
+@theme-primary-color:                  @color-a1;
+
+// 穿梭框
+// 使用场景：添加角色、资源导入
+@shuttle-box-default-bg:                  transparent;       //穿梭框默认背景色
+@shuttle-box-active-bg:                   @color-b2;         //选择项active状态下背景颜色
+@shuttle-box-active-border:               @color-l2;         //选择项active状态下边框颜色
+@shuttle-box-default-color:               @color-c1;         //穿梭框中默认字体颜色
+@shuttle-box-item-border:                 @color-l2;         //穿梭框选项边框颜色
+@shuttle-box-btn-color:                   @theme-primary-color;       //穿梭框中全选按钮字体颜色
+@shuttle-box-info-bg:                     @shuttle-box-item-border;   //穿梭框中选择联系人数提示部分背景色
+@shuttle-box-info-color:                  @theme-primary-color;       //穿梭框中选择联系人数提示部分字体颜色
+
+// dt-dropdown-tree
+@dt-dropdown-tree-bg:                  @color-b1;     // 下拉树背景色
+
+// 下拉列表(dropdown)
+@dropdown-default-bg:                  @color-b1;     // 下拉列表背景色：default
+@dropdown-hover-bg:                    @color-b2;     // 下拉列表背景色：hover
+@dropdown-active-bg:                   @color-b15;    // 下拉列表背景色：active
+
+@dropdown-default-color:               @color-c1;    // 下拉列表字体颜色：default
+@dropdown-hover-color:                 @color-c0;    // 下拉列表字体颜色：hover
+@dropdown-active-color:                @color-c0;    // 下拉列表字体颜色：active
+//config-interface
+@interface-block-bg:        @color-b4;               // 界面配置的block背景颜色
+@interface-foot-bg:         @color-b1;               // 界面配置的foot背景颜色
+@interface-body-border:     @color-l2;               // 界面配置的图片边框颜色
+@interface-block-border:    transparent;               // 界面配置的block边框颜色
+
+@dropdown-content-border:              @color-l2;    // 下拉列表边框
+@dropdown-cascade-arrow-color:         @color-c2;   // 下拉列表三角小箭头的颜色
+@dropdown-btn-color:                   @color-t1;    // 列表操作下拉选的图标颜色
+
+// 多选下拉列表
+@dropdown-selected-list-default-bg:       @color-b6; // 多选下拉选中的选中项列表背景色：default
+@dropdown-selected-list-hover-bg:         @color-b6; // 多选下拉选中的选中项列表背景色：hover
+
+@dropdown-selected-list-default-color:    @color-c1;  // 多选下拉选中的选中项列表字体颜色：default
+@dropdown-selected-list-hover-color:      @color-c0;  // 多选下拉选中的选中项列表字体颜色：hover
+@dropdown-selected-list-close-btn-color:  @color-l1;  // 多选下拉选中的选中项列表关闭按钮字体颜色（小叉号）
+
+@dropdown-item-input-bg:                  @default-bg;  // 多选下拉框列表中input背景色：default
+
+// 翻页器
+@table-footer-bg:                   @default-bg;  // 翻页器背景色(默认使用底色)：default
+@pagination-dropdown-icon-color:    @color-c3;            // 翻页器下拉列表图标的颜色
+@pagination-title-color:            @color-c2;            // 翻页器title字体颜色
+
+@pagination-color:                  @color-c1;            // 翻页器页码选项字体颜色：default
+@pagination-hover-color:            @theme-primary-color; // 翻页器页码选项字体颜色：hover
+@pagination-disabled-color:         @color-c4;            // 翻页器页码选项字体颜色：disabled
+
+@pagination-active-bg:              @theme-primary-color; // 翻页器页码选项背景色：active
+@pagination-disabled-bg:            @default-bg;  // 翻页器页码选项背景色：disabled
+@pagination-border:                 @color-l2;            // 翻页器页码选项border：default
+@pagination-hover-border:           @theme-primary-color; // 翻页器页码选项border：hover
+@pagination-disabled-border:        @color-l2;            // 翻页器页码选项border：disabled
+
+// 树（tree）
+@tree-color-default:        @color-c1;            // 树的字体颜色：default
+@tree-color-active:         @theme-primary-color; // 树的字体颜色：hover & active
+
+// input框（输入框）
+// normal状态
+@input-bg:                             @default-bg;   // input框背景色: default（使用底色）
+@input-color:                          @color-c3;     // input框字体颜色: default
+@input-border:                         @color-l2;     // input框border: default
+@input-hover-border:                   @color-l1;     // input框border: hover
+@input-active-border:                  @theme-primary-color;     // input框border: active
+@input-disabled-bg:                    @color-b6;     // input框背景色: disabled
+@input-disabled-border:                @color-l2;     // input框border: disabled
+@input-disabled-color:                 @color-c4;     // input框字体颜色: disabled
+// 其它状态
+@input-placeholder-color:              @color-c4;     // input框placeholder字体颜色
+@input-error-color:                    @color-c1;     // input框字体颜色: error
+@input-error-border:                   @color-e1;     // input框border: error
+@input-readonly-border:                @default-bg;   // input框背景色: readonly
+
+// 复选框（checkbox） 与 单选框（radio）的 disable
+@disabled-bg:                           @color-b15;
+@disabled-border:                       @color-l2;
+
+// 复选框
+@checkbox-default-bg:       @default-bg; // 复选框背景色：default
+@checkbox-default-border:   @color-l1;   // 复选框边框：default
+@checkbox-default-color:    @default-bg; // 复选框字体颜色：default
+
+@checkbox-hover-bg:       @default-bg; // 复选框背景色：hover
+@checkbox-hover-border:   @theme-primary-color;   // 复选框边框：hover
+@checkbox-hover-color:    @default-bg; // 复选框字体颜色：hover
+
+@checkbox-active-bg:       @theme-primary-color; // 复选框背景色：active
+@checkbox-active-border:   @theme-primary-color;   // 复选框边框：active
+@checkbox-active-color:    @text-active-color; // 复选框字体颜色：active
+
+// 单选框
+@radio-default-bg:       @default-bg; // 单选框背景色：default
+@radio-default-border:   @color-l1;   // 单选框边框：default
+@radio-default-inner-bg:       @default-bg; // 单选框填充色：default
+
+@radio-hover-bg:       @default-bg; // 单选框背景色：hover
+@radio-hover-border:   @theme-primary-color;   // 单选框边框：hover
+@radio-hover-inner-bg:    @default-bg; // 单选框填充色：hover
+
+@radio-active-bg:       @default-bg; // 单选框背景色：active
+@radio-active-border:   @theme-primary-color;   // 单选框边框：active
+@radio-active-inner-bg:    @theme-primary-color; // 单选框填充色：active
+
+//text-color
+@text-color-first:                @color-c1;
+@text-color-second:               @color-c2;
+@text-color-third:                @color-c3;
+@text-color-fourth:               @color-c4;
+@text-title-color:                @color-c0;  // 字体颜色：大标题
+@text-subtitle-color:             @color-c1;  // 字体颜色：标题
+@text-content-color:              @color-c2;  // 字体颜色：正文
+@text-disabled-color:             @color-c4;  // 字体颜色：disabled
+@text-active-color:               @color-c0;  // 字体颜色：active(背景色为非主题色时，选中状态的字体颜色)
+@text-placeholder-color:          @color-c2;  // 字体颜色：placeholder
+@text-danger-color:               @color-e1;  // 字体颜色：危险
+@text-success-color:              @color-s1;  // 字体颜色：成功
+@text-creating-color:             @color-a1;  // 字体颜色：创建
+// help-block
+@help-block-default-color:        @text-subtitle-color; // 提示信息字体颜色（常用于创建页）
+
+//btn
+// 主题按钮
+@btn-primary-default-bg:          @color-a1;      // 主题按钮背景色：default
+@btn-primary-hover-bg:            @color-a2;      // 主题按钮背景色：hover
+@btn-primary-active-bg:           @color-a3;      // 主题按钮背景色：active
+
+@btn-primary-default-color:          @color-c0;      // 主题按钮字体颜色：default
+@btn-primary-hover-color:            @color-c0;      // 主题按钮字体颜色：hover
+@btn-primary-active-color:           @color-c0;      // 主题按钮字体颜色：active
+
+@btn-primary-default-border:          @btn-primary-default-bg;     // 主题按钮边框：default
+@btn-primary-hover-border:            @btn-primary-hover-bg;       // 主题按钮边框：hover
+@btn-primary-active-border:           @btn-primary-active-bg;      // 主题按钮边框：active
+
+// 危险按钮
+@btn-danger-default-bg:           @default-bg;     // 危险按钮背景色：default
+@btn-danger-hover-bg:             @color-e1;       // 危险按钮背景色：hover
+@btn-danger-active-bg:            @color-e3;       // 危险按钮背景色：active
+
+@btn-danger-default-color:        @color-e1;          // 危险按钮文字颜色：default
+@btn-danger-hover-color:          @color-c0;          // 危险按钮文字颜色：hover
+@btn-danger-active-color:         @color-c0;          // 危险按钮文字颜色：active
+
+@btn-danger-default-border:       @color-e1;            // 危险按钮border颜色：default
+@btn-danger-hover-border:         @btn-danger-hover-bg; // 危险按钮border颜色：hover
+@btn-danger-active-border:        @btn-danger-active-bg;// 危险按钮border颜色：active
+
+// 普通按钮（主按钮-中、小尺寸），中尺寸使用场景：模态框，小尺寸使用场景：提示框
+@btn-default-bg:                  @default-bg;       // 主按钮（中、小尺寸）背景色：default
+@btn-default-hover-bg:            @default-bg;       // 主按钮（中、小尺寸）背景色：hover
+@btn-default-active-bg:           @default-bg;       // 主按钮（中、小尺寸）背景色：active
+
+@btn-default-color:               @color-c0;         // 主按钮（中、小尺寸）背景色：default
+@btn-default-hover-color:         @color-c0;         // 主按钮（中、小尺寸）背景色：hover
+@btn-default-active-color:        @color-c0;         // 主按钮（中、小尺寸）背景色：active
+
+@btn-default-border:              @color-l1;         // 主按钮（中、小尺寸）border：default
+@btn-default-hover-border:        @color-l4;         // 主按钮（中、小尺寸）border：hover
+@btn-default-active-border:       @color-l5;         // 主按钮（中、小尺寸）border：active
+
+//普通按钮（主按钮-大尺寸），使用场景：创建页
+@btn-default-large-bg:                  @default-bg;       // 主按钮（大尺寸）背景色：default
+@btn-default-large-hover-bg:            @default-bg;       // 主按钮（大尺寸）背景色：hover
+@btn-default-large-active-bg:           @default-bg;       // 主按钮（大尺寸）背景色：active
+
+@btn-default-large-color:               @color-c0;         // 主按钮（大尺寸）背景色：default
+@btn-default-large-hover-color:         @color-c0;         // 主按钮（大尺寸）背景色：hover
+@btn-default-large-active-color:        @color-c0;         // 主按钮（大尺寸）背景色：active
+
+@btn-default-large-border:              @color-l1;         // 主按钮（大尺寸）border：default
+@btn-default-large-hover-border:        @color-l4;         // 主按钮（大尺寸）border：hover
+@btn-default-large-active-border:       @color-l5;         // 主按钮（大尺寸）border：active
+
+// 普通按钮（次按钮）,使用场景：列表页
+@btn-secondary-bg:                @default-bg;     // 普通按钮(次按钮)背景色：default
+@btn-secondary-hover-bg:          @default-bg;     // 普通按钮(次按钮)背景色：hover
+@btn-secondary-active-bg:         @default-bg;     // 普通按钮(次按钮)背景色：active
+
+@btn-secondary-color:             @color-c2;       // 普通按钮(次按钮)字体颜色：default
+@btn-secondary-hover-color:       @color-c1;       // 普通按钮(次按钮)字体颜色：hover
+@btn-secondary-active-color:      @color-c2;       // 普通按钮(次按钮)字体颜色：active
+
+@btn-secondary-border:            @color-l1;       // 普通按钮(次按钮)边框：default
+@btn-secondary-hover-border:      @color-l2;       // 普通按钮(次按钮)边框：hover
+@btn-secondary-active-border:     @color-l5;       // 普通按钮(次按钮)边框：active
+
+// 按钮disabled状态（主按钮大尺寸、次按钮）
+@btn-default-disabled-bg:         @color-b2;                // 普通按钮（次按钮）背景色：disabled
+@btn-default-disabled-color:      @color-c4;                // 普通按钮（次按钮）字体颜色：disabled
+@btn-default-disabled-border:     @btn-default-disabled-bg; // 普通按钮（次按钮）边框：disabled
+
+// 按钮disabled状态（主按钮中、小尺寸）
+@btn-disabled-bg:                 @color-b2;       // 普通按钮（主按钮）背景色：disabled
+@btn-disabled-color:              @color-c4;       // 普通按钮（主按钮）字体颜色：disabled
+@btn-disabled-border:             @btn-disabled-bg;// 普通按钮（主按钮）边框：disabled
+
+
+// bk-button（区域、产品等按钮组）
+@bk-btn-bg:                       transparent;   // 按钮组背景色：default
+@bk-btn-color:                    @color-c2;     // 按钮组字体颜色：default
+@bk-btn-border:                   @color-l1;     // 按钮组边框：default
+
+@bk-btn-hover-bg:                 transparent;  // 按钮组背景色：hover
+@bk-btn-hover-color:              @color-a1;    // 按钮组字体颜色：hover
+@bk-btn-hover-border:             @color-a1;    // 按钮组边框：hover
+
+@bk-btn-current-bg:               @color-a1;    // 按钮组背景色：active
+@bk-btn-current-color:            @color-c0;    // 按钮组字体颜色：active
+@bk-btn-current-border:           @color-a1;    // 按钮组边框：active
+
+// table
+@table-outer-border:              @transparent-border; // table外边框
+@table-default-bg:                @default-bg; // table背景色：default
+@table-hover-bg:                  @color-b2;   // table表格背景色：hover
+@table-active-bg:                 @color-b15;  // table表格背景色：active
+@table-head-bg:                   @color-b1;   // table表格头背景色：default
+@table-bg-nodata-tr:              @color-b2;   // table无数据行背景色：
+@table-default-color:             @color-c0;   // table字体颜色：default
+@table-hover-color:               @color-c0;   // table字体颜色：hover
+@table-active-color:              @color-c0;   // table字体颜色：active
+@table-checkbox-border:           @color-l1;   // table中checkbox的border：default
+@table-default-border:            @table-title-border;   // table的border
+@table-td-border:                 @color-l3;   // table的tr/td的border：default
+@table-title-border:              @color-b1;  // table-head的border
+@table-report-title-border:       @table-td-border;  // 系统报表中table-head的border
+@table-sort-arrow-bg:             @color-b9;  // table中排序小箭头的颜色
+
+//message
+@message-success-bg: @color-s4;     //成功提示的背景颜色
+@message-success-text: @color-c2;   //成功提示的文字颜色
+@message-success-border: @color-s1; //成功提示的边框颜色
+
+@message-danger-bg: @color-e4;     //严重告警提示的背景颜色
+@message-danger-text: @color-c2;   //严重告警提示的文字颜色
+@message-danger-border: @color-e1; //严重告警提示的边框颜色
+
+@message-info-bg: @color-a4;       //说明提示的背景颜色
+@message-info-text: @color-c2;     //说明提示的文字颜色
+@message-info-border: @color-a1;   //说明提示的边框颜色
+
+@message-default-bg: rgba(102,102,102,.1);  //灰色默认提示的背景颜色
+@message-default-text: @color-c2;;          //灰色默认提示的文字颜色
+@message-default-border: #666666;           //灰色默认提示的边框颜色
+
+@message-warning-bg: @color-w4;       //告警提示的背景颜色
+@message-warning-text: @color-c2;     //告警提示的文字颜色
+@message-warning-border: @color-w1;   //告警提示的边框颜色
+
+@message-link-default-color: @color-a1;  //告警提示中链接文字颜色
+
+//toaster
+@toaster-default-bg:        @color-b1;               // 全局提示的背景色
+@toaster-default-color:     @color-c1;               // 全局提示的文字颜色
+@toaster-button-color:      @color-l5;               // 错误全局提示的右上角叉号颜色
+@toaster-info-img:         url("../img/alipub/toaster/message-info.svg"); // 信息提示左侧图标
+
+//tooltip
+@dark-tooltip-inner-bg:        @color-b1;           //鼠标移入文本后出现气泡主体背景色
+@dark-tooltip-arrow-bg:        @color-b1;           //鼠标移入文本后出现气泡箭头背景色
+@dark-tooltip-inner-color:     @color-c0;           //鼠标移入文本后出现气泡字体颜色
+@light-tooltip-color:          @color-c0;           //鼠标移入字体图标后出现气泡字体颜色
+@light-tooltip-bg:             @color-b1;           //鼠标移入字体图标后出现浅色气泡背景色
+@light-tooltip-border:         @color-b1;           //鼠标移入字体图标后出现浅色气泡边框
+
+// 开关主体
+@switch-default-bg:                         @color-b7;     // switch开关背景色：default
+@switch-default-border:                     @color-c3;     // switch开关边框颜色：default
+@switch-active-bg:                          @color-s1;     // switch开关背景色：active
+
+// 开关按钮
+@switch-button-default-bg:                  @color-b8;     // switch开关按钮背景色：default
+@switch-button-default-border:              @color-l1;     // switch开关按钮边框颜色：default
+
+// 不可用状态
+@switch-disabled-bg:                        @color-b6;     // switch开关背景色：disabled
+@switch-disabled-border:                    @color-b7;     // switch开关边框颜色：disabled
+@switch-button-disabled-bg:                 @color-b6;     // switch开关按钮背景色：disabled
+@switch-button-disabled-border:             @color-b7;     // switch开关按钮边框颜色：disabled
+
+//step
+@step-bg:                               @color-b7;  // 步骤条外部背景颜色
+@step-after-color:                      @color-b5;  // 未进行到步骤右方突出三角颜色
+@step-color:                            @color-c2;  // 未进行到步骤条字体颜色
+@step-pass-bg:                          @color-a3;  // 步骤条 pass 状态下背景颜色
+@step-pass-color:                       @color-c2;  // 步骤条 pass 状态下字体颜色
+@step-active-bg:                        @color-a1;  // 步骤条 active 状态背景颜色
+@step-active-color:                     @color-c0;  // 步骤条 active 状态字体颜色
+
+@step-modal-bg:                         @modal-bg;  // 模态框中步骤条外部背景颜色
+@step-modal-border:                     @color-c3;  // 模态框中未进行到步骤条边框颜色
+@step-modal-color:                      @color-c3;  // 模态框中未进行到步骤条字体颜色
+@step-modal-pass-color:                 @color-a3;  // 模态框中步骤条 pass 状态下字体颜色
+@step-modal-pass-border:                @color-a3;  // 模态框中步骤条 pass 状态下边框颜色
+@step-modal-active-bg:                  @color-a1;  // 模态框中步骤条 active 状态背景颜色
+@step-modal-active-color:               @color-c0;  // 模态框中步骤条 active 状态字体颜色
+
+//calendar
+@calendar-default-bg:                   @color-b1;  //日期下拉框的背景色
+@calendar-default-color:                @color-c2;  //日期下拉框字体颜色
+@calendar-default-border:               @color-l2;  //日期下拉框的边框颜色
+
+@calendar-disabled-color:               @color-c4;  //日期下拉框禁选部分字体颜色
+@calendar-disabled-bg:                  @default-bg;  //日期下拉框禁选部分背景色
+
+@calendar-hover-bg:                     @color-b2;  //日期下拉框hover状态下整行背景色
+@calendar-hover-color:                  @text-active-color;  //日期下拉框hover状态下字体颜色
+
+@calendar-active-color:              @color-c0;  //日期下拉框active状态下字体颜色
+@calendar-active-bg:                 @theme-primary-color;  //日期下拉框active状态下背景色
+@calendar-tr-hover-bg:               @calendar-hover-bg; //日期下拉框hover状态下整行背景色
+
+@calendar-range-default-bg:          @color-b1; //日期区间弹出框背景色
+@calendar-range-active-bg:           @color-a4; //日期下拉框选中区间的背景色
+
+// panel
+@panel-bg:                        @color-b4;  // panel的背景色：default
+@middle-panel-bg:                 @color-b5;  // panel的背景色：中间件
+
+// 滚动条（scrollbar）
+@scrollbar-default-bg:            @color-b7;                 // 滚动条背景色：全局
+@scrollbar-nav-bg:  @color-b7;          // 滚动条背景色：导航菜单
+
+// 滑块（slider）
+@slider-handle-bg:     @color-b8; // 滑块按钮背景色
+@slider-track-bg:      @color-b7; // 滑块背景色：default
+@slider-selection-bg:  @theme-primary-color; // 滑块背景色：active
+
+// dashboard
+@section-dashboard-bg:               @body-bg; //首页大盘背景色
+@dashboard-inner-border:             @color-l3; // 首页大盘概览panel中border
+@dashboard-title-color:              @text-title-color; // 首页大盘概览panel中title的字体颜色
+@dashboard-text-color:               @text-subtitle-color; // 首页大盘概览panel中text的字体颜色
+@dashboard-rds-text-bg:              @color-b1; // 首页大盘概览panel中rds中text的背景颜色
+@dashboard-label-color:              @color-c1; // 首页大盘概览panel中label的字体颜色
+@dashboard-overview-count-color:     @text-title-color; // 首页大盘概览panel中总数的字体颜色
+@dashboard-alarm-label:              @color-c2; // 首页大盘告警数图例label字体颜色
+@dashboard-list-cicle-bg:            @color-b10;  // 首页大盘报警信息列表中序号圆圈的背景色（第4个及以后）
+@dashboard-list-cicle-top-bg:        @color-b1;  // 首页大盘报警信息列表中序号圆圈的背景色（前3个）
+
+@tips-bg:                            @color-b1;  // 页面右侧tips提示框
+@tips-hide-img:                      url('../img/coral/tips/tips-btn-left.png');  // 页面右侧tips提示框图片：hidden
+@tips-show-img:                      url('../img/coral/tips/tips-btn-right.png');  // 页面右侧tips提示框图片：show
+
+
+
+// tab选项卡：一级
+@tab-content-bg:                  @default-bg;  // 选项卡视图背景色：底色
+@tab-default-color:               @text-title-color;    // 选项卡字体颜色：default
+@tab-default-border:              @color-l2;            // 选项卡边框
+@tab-default-bg:                  @default-bg;  // 选项卡tab背景色：底色
+@tab-separator-border:            @color-l2;            // 选项卡分隔线
+@tab-level1-active-color:         @theme-primary-color; // 选项卡字体颜色：ative
+@tab-level1-active-border:        @theme-primary-color; // 选项卡边框：ative
+@tab-level1-active-bg:            @default-bg;  // 选项卡tab背景色：底色
+
+// tab选项卡：二级
+@tab-level2-default-color:        @color-c2;                   // 二级选项卡字体颜色：default
+@tab-level2-hover-color:          @color-c1;                   // 二级选项卡字体颜色：hover
+@tab-level2-active-color:         @color-c0;                   // 二级选项卡字体颜色：active
+@tab-level2-disabled-color:       @color-c4;                   // 二级选项卡字体颜色：disabled
+
+@tab-level2-active-bg:            @color-b12;                  // 二级选项卡背景色：active
+@tab-level2-disabled-bg:          @color-b2;                   // 二级选项卡背景色：disabled
+
+@tab-level2-default-border:       @color-l1;                   // 二级选项卡边框：default
+@tab-level2-hover-border:         @color-l1;                   // 二级选项卡边框：hover
+@tab-level2-active-border:        @tab-level2-active-bg;       // 二级选项卡边框：active
+@tab-level2-disabled-border:      @tab-level2-disabled-bg;     // 二级选项卡边框：disabled
+
+// tab选项卡：三级
+@tab-level3-active-color:          @theme-primary-color;     // 三级选项卡字体颜色：hover & active
+@tab-level3-active-border:         @theme-primary-color;     // 三级选项卡边框：hover & active
+
+// tab选项卡：Region tab
+@tab-region-default-bg:         @default-bg;           //region选项卡背景色：default
+@tab-region-hover-bg:           @color-b10;            //region选项卡背景色：hover
+@tab-region-active-bg:          @color-b12;            //region选项卡背景色：active
+@tab-region-default-color:      @color-c2;             //region选项卡字体颜色：default
+@tab-region-hover-color:        @color-c2;             //region选项卡字体颜色：hover
+@tab-region-active-color:       @color-c0;             //region选项卡字体颜色：active
+
+// 首页大盘中的区域tab切换
+@tab-dashboard-default-bg:            @default-bg;     // dasgboard中选项卡背景色：default
+@tab-dashboard-hover-bg:              @color-b10;      // dasgboard中选项卡背景色：hover
+@tab-dashboard-active-bg:             @color-b12;      // dasgboard中选项卡背景色：active
+@tab-dashboard-default-color:         @color-c2;       // dasgboard中选项卡字体颜色：default
+@tab-dashboard-hover-color:           @color-c2;       // dasgboard中选项卡字体颜色：hover
+@tab-dashboard-active-color:          @color-c0;       // dasgboard中选项卡字体颜色：active
+
+@tips-bg:                       @color-b1;   // 页面右侧tips提示框背景颜色
+
+// 监控指标按钮
+@monitor-button-bg:               transparent;
+@monitor-button-active-bg:        @color-b4;
+
+//场景类页面
+// modal-模态框（对话框）
+@modal-bg:                        @color-b4;  // 模态框背景色
+@modal-title-color:               @color-c0;  // 模态框字体颜色：title
+@modal-label-color:               @color-c2;  // 模态框字体颜色：label
+@modal-default-color:             @color-c1;  // 模态框字体颜色：default
+@modal-table-head-bg:             @color-b1;  // 模态框中表格背景色：title
+@modal-close-color:               @color-l5;  // 模态框中右上角叉号颜色
+@modal-close-hover-color:         @color-l4;  // 模态框中右上角叉号hover颜色
+
+//创建页（create-case）
+@create-case-bg:                   @content-bg;     // 创建页面背景色
+@create-case-label-color:          @color-c2;       // 创建页label字体颜色
+@create-case-title-color:          @color-c1;       // 创建页项Title字体颜色
+@create-case-dl-border:            @color-l3;       // 创建页分隔线框
+
+// 详情页 - detail
+@detail-bg:                       @section-bg;   // 详情页背景色
+@detail-title-color:              @text-title-color;   // 详情页title字体颜色
+@detail-divide-border:            @color-l2;   // 详情页分割线
+@detail-list-default-border:      @color-l4;   // 详情页未知边框
+
+// 特殊页面
+// 系统配置 —> license管理
+@licence-default-bg: @color-b4; // licence块背景色：未购买
+@licence-active-bg: @licence-default-bg; // licence块背景色：已购买
+@licence-default-border: @default-bg; // licence块边框：未购买
+@licence-active-border: @default-bg; // licence块边框：已购买
+@licence-active-img: url('../img/licence-active.png'); //licence已购买状态图片
+@licence-default-img: url('../img/licence-default.png'); //licence未购买状态图片
+
+
+//云监控中心
+@summary-modules-border:                          @color-l2; //云监控中心边框
+@monitor-panel-head-bg:                           @color-b1; //云监控中心卡片标题部分背景颜色
+@monitor-panel-bg:                                @default-bg; //云监控中心卡片背景颜色
+@monitor-panel-border:                            transparent;//云监控中心边框阴影
+@pie-chat-default-bg:                             @color-b7; //饼状图最里面小圈背景颜色
+@pie-chat-inner-border:                           @color-l1;  //饼状图中间圆环颜色
+@pie-chat-out-border:                             @color-b7; //饼状图最外边框颜色
+
+// ecs dashboard
+@dashboard-ecs-panel-heading-pl:   10px;    // ecs dashboard中的panel-heading的padding-left
+
+//资源通知配置页分割线
+@system-config-border:           @color-l3;
+
+//a
+@a-text:                               @color-t1;    // 链接文字字体颜色：default
+@a-hover-color:                        @color-a2;    // 链接文字字体颜色：hover
+
+@rsc-bg:                          @color-a2;    //云产品管理、产品概览背景色
+@rsc-color:                       @color-c0;    //云产品管理、产品概览字体颜色
+
+//ram管理-->创建授权策略中间分割线
+@ram-defalt-border:                           @default-border;    //步骤条第二步中间分割线
+
+//个人信息页面
+@user-info-active-bg:               @color-b2;
+@user-info-default-color:           @color-c1;
+@user-info-label-color:             @color-c2;    //个人信息页面 标签的颜色
+@user-info-active-color:            @color-c0;
+@user-info-border:                  @color-l2;
+@user-info-default-border:          @color-l3;
+
+
+@monitor-text-color:            @color-b2;
+@monitor-text-hover-bg:         @color-b12;
+@monitor-text-hover-color:      @color-b14;
+@monitor-table-border:          @color-c1;
+
+@overview-module-bg: @color-c1;
+@overview-detail-bg: @color-c1;
+@overview-detail-bar-bg: @color-a2;
+
+// inventory
+@inventory-module-bg:                  @color-b4;
+@inventory-module-title-bg:            @color-b1;
+@inventory-progress:                   @color-b2;
+
+// ros
+@ros-exam-bg:                          @color-b4;
+
+//配额管理
+@quota-title-bg:                      @color-b1;  //配额管理页面标题背景颜色
+@quota-title-color:                   @color-c0;  //配额管理页面标题颜色
+@quota-body-bg:                       @color-b4;  //配额管理页面背景颜色
+
+// elastic
+@elastic-bg:                      @color-b4;
+@elastic-border:                  @color-l1;
+
+// 资源申请step
+@apply-bg:                        @color-b4;
+@apply-step-bg:                   @color-b7;
+@apply-step-color:                @color-c2;
+@apply-step-active-bg:            @color-a1;
+@apply-step-active-color:         @color-c0;
+@apply-step-active-bottom:        transparent;
+
+@menu-hover:                      @color-t1;
+
+// rsc-use-list
+@rsc-use-border:                  @color-l2;
+
+@bk-form-row-border:                      @color-l5;
+
+//used to define font weight 200
+@font-yahei-light:                200;
+
+//siderbarWidth
+@siderbar-width: 160px;
+
+
+@theme-font-family:MicrosoftYaHei;
+
+//NAT网关 -> 实例详情 —> 带宽包 中的 带宽包列表
+@card-head-default-bg:            @color-b1;
+
+//NAT网关 -> 实例详情 —> 带宽包 中的 添加带宽包
+@card-add-default-bg:                @color-b4;         //上传卡片背景色
+@card-add-default-border:            @color-l2;         //上传卡片边框颜色
+@card-add-default-color:             @color-c3;         //上传卡片加号颜色
+
+//  slb—> 证书管理 —> 上传安全证书 中“参考示例”按钮
+@btn-dtcompact-active-border:         @color-l1;          // 边框：active
+@btn-dtcompact-active-color:          @color-c2;          // 字体颜色：active
+@btn-dtcompact-active-bg:             @default-bg;        // 背景色：active
+
+@btn-dtcompact-default-border:         @btn-default-border;         // 边框：default
+@btn-dtcompact-default-color:          @btn-default-color;          // 字体颜色：default
+@btn-dtcompact-default-bg:             @btn-default-bg;             // 背景色：default
+
+@page-title-default-color:            @text-title-color;           // 面包屑字体颜色
+
+@loading-mask-bg:          @color-b5;     // 加载动画模块的背景色
+@loading-blockui-img:        url("../img/coral/loading/loading-blockui.gif");     // 加载动画：blockUI
+@loading-dashboard-img:      url("../img/coral/loading/loading-dashboard.gif");     // 加载动画：首页大盘
+
+@well-bg:                         @color-b4;     // well的背景色：default
+@btn-oval-border:                 @color-l1;     // 部门管理中树上面的按钮边框：default
+@btn-oval-hover-border:           @color-l4;     // 部门管理中树上面的按钮边框：hover
+
+
+
+// 
+// Variables to change general look 
+// 
+
+// LAYOUT
+
+//@content-bg:                    #f2f2f2;
+// 基础功能色
+
+// message链接色、说明色
+@color-a1:                      #00C1DE;      // 常规
+@color-a2:                      #05B7D3;
+@color-a3:                      #34CDE5;
+@color-a4:                      #E6F9FC;
+@color-d:                       #0066CC;
+
+// 成功色
+@color-s1:                      #35B34A;
+@color-s2:                      #249B42;
+@color-s3:                      #92D69E;
+@color-s4:                      #EFF9F1;
+
+// 告警色
+@color-w1:                      #FFCE03;
+@color-w2:                      #E1A802;
+@color-w3:                      #FFDA3F;
+@color-w4:                      #FFFBEB;
+
+// 错误色
+@color-e1:                      #F54745;
+@color-e2:                      #DE3845;
+@color-e3:                      #FA9C9A;
+@color-e4:                      #FEF1F0;
+
+// 链接色
+@color-t1:                      #0066CC;
+
+// 字体
+@color-c1:                      #373D41;      // 标题、正文、三角符
+@color-c2:                      #73777A;      // 正文、提示
+@color-c3:                      #9B9EA0;      // 提示、帮助、提示图标默认背景、模态框关闭图标、不可用按钮文字
+@color-c4:                      #C3C4C6;      // 不可用
+//@color-c5:                      #E6E6E6;
+@color-c5:                      #E6E6E6;
+
+// 线框
+@color-l1:                      #CCCCCC;      // 分割线、单选、多选按钮边框、步骤条一、默认滚动条、面包屑分隔线、正常开关按钮边框、数量选择器、日历
+@color-l2:                      #DDDDDD;      // 输入框及输入框阴影／表格边框、一级选项卡分隔线、不可用开关按钮边框
+@color-l3:                      #EEEEEE;      // 表格分割线\多选下拉框选分割线
+@color-l4:                      #D3D5D5;      // 按钮normal\hover\disable边框
+@color-l5:                      #CFD8DC;      // 表格title分隔线
+
+// 底色、填充色
+@color-b1:                      #F2F2F2;      // 表格title填充、日历选框底色／当前日期选中色、不可用开关按钮
+@color-b2:                      #F5F7F9;      // 列表hover、分步创建页面下一步背景条
+@color-b3:                      #F5F5F5;      // 次按钮Normal、单选／多选按钮disable
+@color-b4:                      #FAFAFA;      // 次按钮Hover
+@color-b5:                      #F0F0F0;      // 次按钮Click
+@color-b6:                      #E0E0E0;      // 不可用输入框／文本框、按钮Disable、步骤条二
+@color-b7:                      #EBECF0;      // 主按钮
+@color-b8:                      #F0F1F6;      // 主按钮
+@color-b9:                      #E1E2E6;      // 主按钮
+@color-b10:                     #ECF1F7;      // 首页region-hover
+@color-b11:                     #D9DEE5;      // 页面内region默认
+@color-b12:                     #546378;      // region选中
+@color-b13:                     #979A9C;      // 胶囊选中背景、按钮／输入框hover边框、不可用箭头或符号
+@color-b14:                     #FFFFFF;      // 白色
+
+//config-interface
+@interface-block-bg:      @color-b14;               // 界面配置的block背景颜色
+@interface-foot-bg:         @color-b3;               // 界面配置的foot背景颜色
+@interface-body-border:     @color-b14;               // 界面配置的图片边框颜色
+@interface-block-border:  @color-l2;               // 界面配置的block边框颜色
+
+@content-bg:                    #EFF2F5;
+@aside-bg:                      #ffffff;
+// NAVBAR TOP
+
+@nav-top-bg:                    @color-c1;
+@nav-top-bg-color:              darken(@nav-top-bg, 4%);
+@nav-top-hover-bg:              #2a2f32; //@nav-top-bg;
+@nav-top-bg-start:              @nav-top-bg;
+@nav-top-bg-end:                @nav-top-bg;
+@nav-header-bg:                 @nav-top-bg;
+
+@nav-top-item-mobile:           #fff;
+@nav-top-item-mobile-active:    darken(@nav-top-item-mobile, 20%);
+
+@nav-top-item-desktop:          #fff;
+@nav-top-item-desktop-active:   darken(@nav-top-item-desktop, 20%);
+
+// SIDEBAR
+
+@sidebar-bg:                      @aside-bg;
+
+@sidebar-item-color:              #333333;
+@sidebar-item-color-active:       #00a8e2;
+@sidebar-item-bg-active:          #f4f4f4;
+@sidebar-item-collapse:           #374251;
+
+@sidebar-icon-color:              @sidebar-item-color;
+@sidebar-icon-color-active:       @sidebar-item-color-active;
+
+@sidebar-bullet-color:            rgba(0,0,0,.25);
+@sidebar-bullet-color-active:     @sidebar-icon-color-active;
+
+@sidebar-heading-color:           #919DA8;
+@sidebar-heading-border:          #5C6173;
+@sidebar-label-color:             @sidebar-item-color;
+
+// OFFSIDEBAR
+
+@offsidebar-bg:                   #fff;
+@offsidebar-border-color:         greyscale(darken(@offsidebar-bg, 20%));
+@offsidebar-color:                @text-color;
+
+@default-bg:                           transparent;  // 背景色：default（透明）
+//PAGE title vertical bar, active font, tab bar
+@theme-primary-color:             @color-a1;
+
+//a
+@a-text:                          @color-t1;
+@text-success:                    #35b34a;
+@text-danger:                     #F54745;
+@text-creating:                   #00C1DE;
+
+@text-title-color: @color-c1; // 字体颜色：大标题
+@text-subtitle-color: @color-c2; // 字体颜色：标题
+@text-content-color: @color-c3; // 字体颜色：正文
+@text-active-color: @color-c5; // 字体颜色：active(背景色为非主题色时，选中状态的字体颜色)
+@text-disabled-color: @color-c4; // 字体颜色：disabled
+@text-placeholder-color: @color-c2; // 字体颜色：placeholder
+@text-danger-color: @color-e1; // 字体颜色：危险
+@text-success-color: @color-s1; // 字体颜色：成功
+@text-creating-color: @color-a1; // 字体颜色：创建
+//table first line background
+@table-head-bg:                   #f2f2f2;
+@table-wrapper:                   #dddddd;
+@table-border:                    #eff1f2;
+@table-title-border:              #cfd8dc;
+@table-hover-bg:                  #fafafa;
+@table-active-bg:                 #fafafa;
+@table-checkbox-border:           #cccccc;
+@table-dropdown-hover-bg:         #f2f2f2;
+@table-dropdown-border:           #d3d5d5;
+@table-bg-nodata-tr:              @color-b2;
+@pagination-acitve-bg:            #f7f7f7;
+@pagination-hover-border:         #00C1DE;
+@pagination-hover:                #00C1DE;
+@pagination-border:               #d7d8d9;
+@pagination-disabled-border:      #d7d8d9;
+@pagination-disabled:             #d7d8d9;
+//used to define font weight 200
+@font-yahei-light:                200;
+
+// input
+@input-disabled-bg:               @color-b6;
+@input-border:                    @color-l2;
+
+//siderbarWidth
+@siderbar-width: 160px;
+
+// input、dt-tree-select
+@hover-border:              @color-b13;
+
+//checkbox radio disable
+@disable-bg:                      @color-b3;
+@disable-border:                  #cccccc;
+
+@shuttle-to-btn-bg:               #e0e0e0; // 穿梭框向左/右按钮未激活背景色
+
+//Level of alert box
+@alert-success-bgd: rgba(19,162,4,0.10);
+@alert-success-ft: #13a204;
+
+
+@alert-info-bgd: rgba(0,176,236,0.10);
+@alert-info-ft: #00b0ec;
+
+@alert-warning-bgd: rgba(255,169,90,0.10);
+@alert-warning-ft: #ffa95a;
+
+@alert-danger-bgd: rgba(237,53,105,0.10);
+@alert-danger-ft: #ed3569;
+
+// create-case
+@theme-m-bk-color:                #666666;
+@theme-m-bk-border:               #dddddd;
+@theme-m-bk-bg:                   transparent;
+@theme-m-bk-color-active:         #00b0ec;
+@theme-m-bk-border-active:        #00b0ec;
+
+//detail
+@detail-border:                   #d7d8d9;
+
+//text-color
+@text-color-first:                @color-c1; //#333
+@text-color-second:               @color-c2; //#666
+@text-color-third:                @color-c3; //#999
+
+@secondary-bg-color: #f5f5f5;
+@theme-font-family: MicrosoftYaHei;
+
+//btn
+@btn-primary-hover-bg: #34cde5;
+@btn-primary-active-bg: #00b7d3;
+
+@btn-default-hover-bg: #f0f1f6;
+@btn-default-click-bg: #e1e2e6;
+@btn-default-bg: #ebecf0;
+@btn-default-border: #D3D5D5;
+@btn-default-disabled-border: #D3D5D5;
+@btn-default-active-border: #a0a2ad;
+
+@btn-secondary-border: #d3d5d5;
+@btn-secondary-hover-bg: #fafafa;
+@btn-secondary-active-bg: #f0f0f0;
+@btn-secondary-click-border: #a0a2ad;
+@btn-secondary-disabled-border: #d3d5d5;
+
+@btn-danger-hover: #ff4f4c;
+@btn-danger-active: #de3845;
+@btn-disabled-border: #D3D5D5;
+
+// tab
+@tab-capsule-hover-border: @color-b13;
+@tab-region-active-bg: @color-b12;
+@tab-content-border: @color-l1;
+
+//dashboard tab
+@alipub-tab-dashboard-active-bg: @color-b12;
+@alipub-tab-dashboard-hover-bg: @color-b10;
+
+@select-disabled-bg: @color-b6;
+@select-disabled-border: @color-l2;
+@select-disabled-color-i: @color-c1;
+
+@dropdown-btn-color: @color-t1;
+
+// modal close
+@modal-close-color: @color-b13;
+@modal-close-hover-color: @color-c2;
+
+//tooltip
+@tooltip-white-color: @color-c2;
+@tooltip-white-border: @color-l2;
+@tooltip-white-bg: @color-b14;
+
+// 步骤条
+@step-modal-pass-bg:           @color-b14;  // 已完成的步骤的背景色
+@step-modal-pass-color:        @theme-primary-color;  // 已完成的步骤的背景色
+@step-modal-pass-border:       @theme-primary-color;  // 已完成的步骤的背景色
+
+
+//
+// Variables
+// --------------------------------------------------
+
+
+//== Colors
+//
+//## Gray and brand colors for use across Bootstrap.
+
+// Redefined Gray colors for theme
+@gray-darker:            #232735;
+@gray-dark:              #3a3f51;
+@gray:                   #dde6e9;
+@gray-light:             #e4eaec;
+@gray-lighter:           #edf1f2;
+
+// Classic brand colors
+
+@brand-primary:          #5d9cec;
+@brand-success:          #27c24c;
+@brand-info:             #23b7e5;
+@brand-warning:          #ff902b;
+@brand-danger:           #f05050;
+
+// New brand colors
+
+@brand-inverse:          #131e26;
+@brand-green:            #37bc9b;
+@brand-btn-color-a:      #71b838;
+@brand-pink:             #f532e5;
+@brand-purple:           #7266ba;
+@brand-dark:             #3a3f51;
+@brand-yellow:           #fad732;
+
+// DtDream brand colors
+
+@brand-dtblue:   #6ecff6;
+@brand-dtgreen:  #b6da9d;
+@brand-dtgray:   #505052;
+
+
+// Brand color Variants
+
+@amountOfLight: 10%;
+
+@brand-primary-light:          lighten(@brand-primary, @amountOfLight);
+@brand-success-light:          lighten(@brand-success, @amountOfLight);
+@brand-info-light:             lighten(@brand-info, @amountOfLight);
+@brand-warning-light:          lighten(@brand-warning, @amountOfLight);
+@brand-danger-light:           lighten(@brand-danger, @amountOfLight);
+@brand-inverse-light:          lighten(@brand-inverse, @amountOfLight);
+@brand-green-light:            lighten(@brand-green, @amountOfLight);
+@brand-pink-light:             lighten(@brand-pink, @amountOfLight);
+@brand-purple-light:           lighten(@brand-purple, @amountOfLight);
+@brand-dark-light:             lighten(@brand-dark, @amountOfLight);
+@brand-yellow-light:           lighten(@brand-yellow, @amountOfLight);
+@brand-dtblue-light:           lighten(@brand-dtblue, @amountOfLight);
+@brand-dtgreen-light:          lighten(@brand-dtgreen, @amountOfLight);
+@brand-dtgray-light:           lighten(@brand-dtgray, @amountOfLight);
+
+@brand-primary-dark:           darken(@brand-primary, @amountOfLight);
+@brand-success-dark:           darken(@brand-success, @amountOfLight);
+@brand-info-dark:              darken(@brand-info, @amountOfLight);
+@brand-warning-dark:           darken(@brand-warning, @amountOfLight);
+@brand-danger-dark:            darken(@brand-danger, @amountOfLight);
+@brand-inverse-dark:           darken(@brand-inverse, @amountOfLight);
+@brand-green-dark:             darken(@brand-green, @amountOfLight);
+@brand-pink-dark:              darken(@brand-pink, @amountOfLight);
+@brand-purple-dark:            darken(@brand-purple, @amountOfLight);
+@brand-dark-dark:              darken(@brand-dark, @amountOfLight);
+@brand-yellow-dark:            darken(@brand-yellow, @amountOfLight);
+@brand-dtblue-dark:            darken(@brand-dtblue, @amountOfLight);
+@brand-dtgreen-dark:           darken(@brand-dtgreen, @amountOfLight);
+@brand-dtgray-dark:            darken(@brand-dtgray, @amountOfLight);
+
+// Global status color , use hard code for the present . We will use brand color with standardized in the future.
+@brand-status-error:           rgb(250, 49, 49);//#FA3131
+@brand-status-critical:        rgb(252,138,48);//#FC8A30
+@brand-status-warning:         rgb(253,231,48);//#FDE730
+@brand-status-info:            rgb(110,207,246);//#6ECFF6
+@brand-status-pending:         rgb(111, 110, 117, 0.39);//#6F6E75
+@brand-status-ok:              #6FBA2C;
+
+//== Scaffolding
+//
+//## Settings for some of the most global styles.
+
+//** Background color for `<body>`.
+@body-bg:               #f5f7fa;
+//** Global text color on `<body>`.
+@text-color:            #515253;
+
+//** Global textual link color.
+@link-color:            @brand-primary;
+//** Link hover color set via `darken()` function.
+@link-hover-color:      darken(@link-color, 15%);
+//** Link hover decoration.
+@link-hover-decoration: underline;
+
+
+//== Typography
+//
+//## Font, line-height, and color for body text, headings, and more.
+
+@font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-serif:       Georgia, "Times New Roman", Times, serif;
+//** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
+@font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
+@font-family-base:        @font-family-sans-serif;
+
+@font-size-base:          14px;
+@font-size-large:         ceil((@font-size-base * 1.25)); // ~18px
+@font-size-small:         ceil((@font-size-base * 0.85)); // ~12px
+
+@font-size-h1:            floor((@font-size-base * 2.6)); // ~36px
+@font-size-h2:            floor((@font-size-base * 2.15)); // ~30px
+@font-size-h3:            ceil((@font-size-base * 1.7)); // ~24px
+@font-size-h4:            ceil((@font-size-base * 1.25)); // ~18px
+@font-size-h5:            @font-size-base;
+@font-size-h6:            ceil((@font-size-base * 0.85)); // ~12px
+
+//** Unit-less `line-height` for use in components like buttons.
+@line-height-base:        1.528571429; // 20/14
+//** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
+@line-height-computed:    floor((@font-size-base * @line-height-base)); // ~20px
+
+//** By default, this inherits from the `<body>`.
+@headings-font-family:    inherit;
+@headings-font-weight:    500;
+@headings-line-height:    1.1;
+@headings-color:          inherit;
+
+
+//== Iconography
+//
+//## Specify custom location and filename of the included Glyphicons icon font. Useful for those including Bootstrap via Bower.
+
+//** Load fonts from this directory.
+@icon-font-path:          "../fonts/";
+//** File name for all font files.
+@icon-font-name:          "glyphicons-halflings-regular";
+//** Element ID within SVG icon file.
+@icon-font-svg-id:        "glyphicons_halflingsregular";
+
+
+//== Components
+//
+//## Define common padding and border radius sizes and more. Values based on 14px text and 1.428 line-height (~20px to start).
+
+@padding-base-vertical:     6px;
+@padding-base-horizontal:   16px;
+
+@padding-large-vertical:    10px;
+@padding-large-horizontal:  20px;
+
+@padding-small-vertical:    5px;
+@padding-small-horizontal:  10px;
+
+@padding-xs-vertical:       1px;
+@padding-xs-horizontal:     5px;
+
+@line-height-large:         1.33;
+@line-height-small:         1.5;
+
+@border-radius-base:        4px;
+@border-radius-large:       6px;
+@border-radius-small:       3px;
+
+//** Global color for active items (e.g., navs or dropdowns).
+@component-active-color:    #fff;
+//** Global background color for active items (e.g., navs or dropdowns).
+@component-active-bg:       @brand-primary;
+
+//** Width of the `border` for generating carets that indicator dropdowns.
+@caret-width-base:          4px;
+//** Carets increase slightly in size for larger components.
+@caret-width-large:         5px;
+
+
+//== Tables
+//
+//## Customizes the `.table` component with basic values, each used across all table variations.
+
+//** Padding for `<th>`s and `<td>`s.
+@table-cell-padding:            8px;
+//** Padding for cells in `.table-condensed`.
+@table-condensed-cell-padding:  5px;
+
+//** Default background color used for all tables.
+@table-bg:                      transparent;
+//** Background color used for `.table-striped`.
+@table-bg-accent:               #fafbfc;
+//** Background color used for `.table-hover`.
+@table-bg-hover:                #fafbfc;
+@table-bg-active:               @table-bg-hover;
+
+//** Border color for table and cell borders.
+@table-border-color:            #eee;
+
+
+//== Buttons
+//
+//## For each of Bootstrap's buttons, define text, background and border color.
+
+@btn-font-weight:                normal;
+
+@btn-default-color:              #333;
+@btn-default-bg:                 #fff;
+//@btn-default-border:             transparent;
+@btn-default-border:              #eaeaea;
+
+@btn-primary-color:              #fff;
+@btn-primary-bg:                 @brand-primary;
+@btn-primary-border:             darken(@btn-primary-bg, 1%);
+
+@btn-success-color:              #fff;
+@btn-success-bg:                 @brand-success;
+@btn-success-border:             darken(@btn-success-bg, 1%);
+
+@btn-info-color:                 #fff;
+@btn-info-bg:                    @brand-info;
+@btn-info-border:                darken(@btn-info-bg, 1%);
+
+@btn-warning-color:              #fff;
+@btn-warning-bg:                 @brand-warning;
+@btn-warning-border:             darken(@btn-warning-bg, 1%);
+
+@btn-danger-color:               #fff;
+@btn-danger-bg:                  @brand-danger;
+@btn-danger-border:              darken(@btn-danger-bg, 1%);
+
+@btn-link-disabled-color:        @gray-light;
+
+
+//== Forms
+//
+//##
+
+//** `<input>` background color
+@input-bg:                       #fff;
+//** `<input disabled>` background color
+@input-bg-disabled:              @gray-lighter;
+
+//** Text color for `<input>`s
+@input-color:                    @gray-dark;
+//** `<input>` border color
+@input-border:                   @gray;
+// TODO: Rename `@input-border-radius` to `@input-border-radius-base` in v4
+//** Default `.form-control` border radius
+@input-border-radius:            @border-radius-base;
+//** Large `.form-control` border radius
+@input-border-radius-large:      @border-radius-large;
+//** Small `.form-control` border radius
+@input-border-radius-small:      @border-radius-small;
+
+//** Border color for inputs on focus
+@input-border-focus:             #66afe9;
+
+//** Placeholder text color
+@input-color-placeholder:        #b7bac9;
+
+//** Default `.form-control` height
+@input-height-base:              (@line-height-computed + (@padding-base-vertical * 2) + 2);
+//** Large `.form-control` height
+@input-height-large:             (ceil(@font-size-large * @line-height-large) + (@padding-large-vertical * 2) + 2);
+//** Small `.form-control` height
+@input-height-small:             (floor(@font-size-small * @line-height-small) + (@padding-small-vertical * 2) + 2);
+
+//** `.form-group` margin
+@form-group-margin-bottom:       15px;
+
+@legend-color:                   @gray-dark;
+@legend-border-color:            #e5e5e5;
+
+//** Background color for textual input addons
+@input-group-addon-bg:           @gray-lighter;
+//** Border color for textual input addons
+@input-group-addon-border-color: @input-border;
+
+//** Disabled cursor for form controls and buttons.
+@cursor-disabled:                not-allowed;
+
+//== Dropdowns
+//
+//## Dropdown menu container and contents.
+
+//** Background for the dropdown menu.
+@dropdown-bg:                    #fff;
+//** Dropdown menu `border-color`.
+@dropdown-border:                #e1e1e1;
+//** Dropdown menu `border-color` **for IE8**.
+@dropdown-fallback-border:       #ccc;
+//** Divider color for between dropdown items.
+@dropdown-divider-bg:            #e5e5e5;
+
+//** Dropdown link text color.
+@dropdown-link-color:            #5f5f5f;
+//** Hover color for dropdown links.
+@dropdown-link-hover-color:      darken(@gray-dark, 5%);
+//** Hover background for dropdown links.
+@dropdown-link-hover-bg:         #fafbfc;
+
+//** Active dropdown menu item text color.
+@dropdown-link-active-color:     @component-active-color;
+//** Active dropdown menu item background color.
+@dropdown-link-active-bg:        @component-active-bg;
+
+//** Disabled dropdown menu item background color.
+@dropdown-link-disabled-color:   @gray-light;
+
+//** Text color for headers within dropdown menus.
+@dropdown-header-color:          @gray-light;
+
+//** Deprecated `@dropdown-caret-color` as of v3.1.0
+@dropdown-caret-color:           #000;
+
+
+//-- Z-index master list
+//
+// Warning: Avoid customizing these values. They're used for a bird's eye view
+// of components dependent on the z-axis and are designed to all work together.
+//
+// Note: These variables are not generated into the Customizer.
+
+@zindex-navbar:            1000;
+@zindex-dropdown:          1000;
+@zindex-popover:           1060;
+@zindex-tooltip:           1070;
+@zindex-navbar-fixed:      1030;
+@zindex-modal-background:  1040;
+@zindex-modal:             1050;
+
+
+//== Media queries breakpoints
+//
+//## Define the breakpoints at which your layout will change, adapting to different screen sizes.
+
+// Extra small screen / phone
+//** Deprecated `@screen-xs` as of v3.0.1
+@screen-xs:                  480px;
+//** Deprecated `@screen-xs-min` as of v3.2.0
+@screen-xs-min:              @screen-xs;
+//** Deprecated `@screen-phone` as of v3.0.1
+@screen-phone:               @screen-xs-min;
+
+// Small screen / tablet
+//** Deprecated `@screen-sm` as of v3.0.1
+@screen-sm:                  768px;
+@screen-sm-min:              @screen-sm;
+//** Deprecated `@screen-tablet` as of v3.0.1
+@screen-tablet:              @screen-sm-min;
+
+// Medium screen / desktop
+//** Deprecated `@screen-md` as of v3.0.1
+@screen-md:                  992px;
+@screen-md-min:              @screen-md;
+//** Deprecated `@screen-desktop` as of v3.0.1
+@screen-desktop:             @screen-md-min;
+
+// Large screen / wide desktop
+//** Deprecated `@screen-lg` as of v3.0.1
+@screen-lg:                  1200px;
+@screen-lg-min:              @screen-lg;
+//** Deprecated `@screen-lg-desktop` as of v3.0.1
+@screen-lg-desktop:          @screen-lg-min;
+
+// So media queries don't overlap when required, provide a maximum
+@screen-xs-max:              (@screen-sm-min - 1);
+@screen-sm-max:              (@screen-md-min - 1);
+@screen-md-max:              (@screen-lg-min - 1);
+
+
+//== Grid system
+//
+//## Define your custom responsive grid.
+
+//** Number of columns in the grid.
+@grid-columns:              12;
+//** Padding between columns. Gets divided in half for the left and right.
+@grid-gutter-width:         30px;
+// Navbar collapse
+//** Point at which the navbar becomes uncollapsed.
+@grid-float-breakpoint:     @screen-sm-min;
+//** Point at which the navbar begins collapsing.
+@grid-float-breakpoint-max: (@grid-float-breakpoint - 1);
+
+
+//== Container sizes
+//
+//## Define the maximum width of `.container` for different screen sizes.
+
+// Small screen / tablet
+@container-tablet:             ((720px + @grid-gutter-width));
+//** For `@screen-sm-min` and up.
+@container-sm:                 @container-tablet;
+
+// Medium screen / desktop
+@container-desktop:            ((940px + @grid-gutter-width));
+//** For `@screen-md-min` and up.
+@container-md:                 @container-desktop;
+
+// Large screen / wide desktop
+@container-large-desktop:      ((1140px + @grid-gutter-width));
+//** For `@screen-lg-min` and up.
+@container-lg:                 @container-large-desktop;
+
+
+//== Navbar
+//
+//##
+
+// Basics of a navbar
+@navbar-height:                    55px;
+@navbar-margin-bottom:             @line-height-computed;
+@navbar-border-radius:             @border-radius-base;
+@navbar-padding-horizontal:        floor((@grid-gutter-width / 2));
+@navbar-padding-vertical:          ((@navbar-height - @line-height-computed) / 2);
+@navbar-collapse-max-height:       340px;
+
+@navbar-default-color:             #777;
+@navbar-default-bg:                #f8f8f8;
+@navbar-default-border:            darken(@navbar-default-bg, 6.5%);
+
+// Navbar links
+@navbar-default-link-color:                #fff;
+@navbar-default-link-hover-color:          #ddd;
+@navbar-default-link-hover-bg:             transparent;
+@navbar-default-link-active-color:         #ddd;
+@navbar-default-link-active-bg:            darken(@navbar-default-bg, 6.5%);
+@navbar-default-link-disabled-color:       #ccc;
+@navbar-default-link-disabled-bg:          transparent;
+
+// Navbar brand label
+@navbar-default-brand-color:               @navbar-default-link-color;
+@navbar-default-brand-hover-color:         darken(@navbar-default-brand-color, 10%);
+@navbar-default-brand-hover-bg:            transparent;
+
+// Navbar toggle
+@navbar-default-toggle-hover-bg:           #ddd;
+@navbar-default-toggle-icon-bar-bg:        #888;
+@navbar-default-toggle-border-color:       #ddd;
+
+
+// Inverted navbar
+// Reset inverted navbar basics
+@navbar-inverse-color:                      @gray-light;
+@navbar-inverse-bg:                         #222;
+@navbar-inverse-border:                     darken(@navbar-inverse-bg, 10%);
+
+// Inverted navbar links
+@navbar-inverse-link-color:                 @gray-light;
+@navbar-inverse-link-hover-color:           #fff;
+@navbar-inverse-link-hover-bg:              transparent;
+@navbar-inverse-link-active-color:          @navbar-inverse-link-hover-color;
+@navbar-inverse-link-active-bg:             darken(@navbar-inverse-bg, 10%);
+@navbar-inverse-link-disabled-color:        #444;
+@navbar-inverse-link-disabled-bg:           transparent;
+
+// Inverted navbar brand label
+@navbar-inverse-brand-color:                @navbar-inverse-link-color;
+@navbar-inverse-brand-hover-color:          #fff;
+@navbar-inverse-brand-hover-bg:             transparent;
+
+// Inverted navbar toggle
+@navbar-inverse-toggle-hover-bg:            #333;
+@navbar-inverse-toggle-icon-bar-bg:         #fff;
+@navbar-inverse-toggle-border-color:        #333;
+
+
+//== Navs
+//
+//##
+
+//=== Shared nav styles
+@nav-link-padding:                          10px 15px;
+@nav-link-hover-bg:                         transparent;
+
+@nav-disabled-link-color:                   @gray-light;
+@nav-disabled-link-hover-color:             @gray-light;
+
+@nav-open-link-hover-color:                 #fff;
+
+//== Tabs
+@nav-tabs-border-color:                     #ddd;
+
+@nav-tabs-link-hover-border-color:          #ddd;
+
+@nav-tabs-active-link-hover-bg:             #fff;
+@nav-tabs-active-link-hover-color:          @gray;
+@nav-tabs-active-link-hover-border-color:   #ddd;
+
+@nav-tabs-justified-link-border-color:            #ddd;
+@nav-tabs-justified-active-link-border-color:     @body-bg;
+
+//== Pills
+@nav-pills-border-radius:                   @border-radius-base;
+@nav-pills-active-link-hover-bg:            @component-active-bg;
+@nav-pills-active-link-hover-color:         @component-active-color;
+
+
+//== Pagination
+//
+//##
+
+@pagination-color:                     @text-color;
+@pagination-bg:                        #fff;
+@pagination-border:                    #eee;
+
+@pagination-hover-color:               @link-hover-color;
+@pagination-hover-bg:                  #fafafa;
+@pagination-hover-border:              #eee;
+
+@pagination-active-color:              #fff;
+@pagination-active-bg:                 @brand-primary;
+@pagination-active-border:             @brand-primary;
+
+@pagination-disabled-color:            @gray-light;
+@pagination-disabled-bg:               #fff;
+@pagination-disabled-border:           #eee;
+
+
+//== Pager
+//
+//##
+
+@pager-bg:                             @pagination-bg;
+@pager-border:                         @pagination-border;
+@pager-border-radius:                  15px;
+
+@pager-hover-bg:                       @pagination-hover-bg;
+
+@pager-active-bg:                      @pagination-active-bg;
+@pager-active-color:                   @pagination-active-color;
+
+@pager-disabled-color:                 @pagination-disabled-color;
+
+
+//== Jumbotron
+//
+//##
+
+@jumbotron-padding:              30px;
+@jumbotron-color:                inherit;
+@jumbotron-bg:                   #fcfcfc;
+@jumbotron-heading-color:        inherit;
+@jumbotron-font-size:            ceil((@font-size-base * 1.5));
+
+
+//== Form states and alerts
+//
+//## Define colors for form feedback states and, by default, alerts.
+
+@state-success-text:             @brand-success;
+@state-success-bg:               #dff0d8;
+@state-success-border:           darken(spin(@state-success-bg, -10), 5%);
+
+@state-info-text:                @brand-info; 
+@state-info-bg:                  #d9edf7;
+@state-info-border:              darken(spin(@state-info-bg, -10), 7%);
+
+@state-warning-text:             @brand-warning;
+@state-warning-bg:               #fcf8e3;
+@state-warning-border:           darken(spin(@state-warning-bg, -10), 5%);
+
+@state-danger-text:              @brand-danger;
+@state-danger-bg:                #f2dede;
+@state-danger-border:            darken(spin(@state-danger-bg, -10), 5%);
+
+
+//== Tooltips
+//
+//##
+
+//** Tooltip max width
+@tooltip-max-width:           200px;
+//** Tooltip text color
+@tooltip-color:               #fff;
+//** Tooltip background color
+@tooltip-bg:                  #222;
+@tooltip-opacity:             .9;
+
+//** Tooltip arrow width
+@tooltip-arrow-width:         5px;
+//** Tooltip arrow color
+@tooltip-arrow-color:         @tooltip-bg;
+
+
+//== prompt
+//
+//##
+
+//** prompttip width
+@prompt-tip-width:           360px;
+//** prompt text color
+@prompt-tip-color:           #373d41;
+//** prompt background color
+@prompt-tip-bg:              #fff;
+@prompt-tip-opacity:         1;
+
+//** prompt arrow color
+@prompt-tip-arrow-color:     @prompt-tip-bg;
+
+
+
+//== Popovers
+//
+//##
+
+//** Popover body background color
+@popover-bg:                          #fff;
+//** Popover maximum width
+@popover-max-width:                   276px;
+//** Popover border color
+@popover-border-color:                #e1e1e1;
+//** Popover fallback border color
+@popover-fallback-border-color:       #ccc;
+
+//** Popover title background color
+@popover-title-bg:                    #fafafa;
+
+//** Popover arrow width
+@popover-arrow-width:                 10px;
+//** Popover arrow color
+@popover-arrow-color:                 #fafafa;
+
+//** Popover outer arrow width
+@popover-arrow-outer-width:           (@popover-arrow-width + 1);
+//** Popover outer arrow color
+@popover-arrow-outer-color:           @popover-border-color;;
+//** Popover outer arrow fallback color
+@popover-arrow-outer-fallback-color:  darken(@popover-fallback-border-color, 20%);
+
+
+//== Labels
+//
+//##
+
+//** Default label background color
+@label-default-bg:            @gray-light;
+//** Primary label background color
+@label-primary-bg:            @brand-primary;
+//** Success label background color
+@label-success-bg:            @brand-success;
+//** Info label background color
+@label-info-bg:               @brand-info;
+//** Warning label background color
+@label-warning-bg:            @brand-warning;
+//** Danger label background color
+@label-danger-bg:             @brand-danger;
+
+//** Default label text color
+@label-color:                 #fff;
+//** Default text color of a linked label
+@label-link-hover-color:      #fff;
+
+
+//== Modals
+//
+//##
+
+//** Padding applied to the modal body
+@modal-inner-padding:         15px;
+
+//** Padding applied to the modal title
+@modal-title-padding:         15px;
+//** Modal title line-height
+@modal-title-line-height:     @line-height-base;
+
+//** Background color of modal content area
+@modal-content-bg:                             #fff;
+//** Modal content border color
+@modal-content-border-color:                   rgba(0,0,0,.2);
+//** Modal content border color **for IE8**
+@modal-content-fallback-border-color:          #999;
+
+//** Modal backdrop background color
+@modal-backdrop-bg:           #000;
+//** Modal backdrop opacity
+@modal-backdrop-opacity:      .5;
+//** Modal header border color
+@modal-header-border-color:   #e5e5e5;
+//** Modal footer border color
+@modal-footer-border-color:   @modal-header-border-color;
+
+@modal-xlg:                   1200px;
+@modal-lg:                    900px;
+@modal-md:                    600px;
+@modal-sm:                    300px;
+@modal-auto:                  auto;
+@modal-big:                   900px;
+
+//== Alerts
+//
+//## Define alert colors, border radius, and padding.
+
+@alert-padding:               8px;
+@alert-border-radius:         @border-radius-small;
+@alert-link-font-weight:      bold;
+
+@alert-success-bg:            @brand-success;
+@alert-success-text:          #fff;
+@alert-success-border:        rgba(0,0,0,.1);
+
+@alert-info-bg:               @brand-info;
+@alert-info-text:             #fff;
+@alert-info-border:           rgba(0,0,0,.1);
+
+@alert-warning-bg:            @brand-warning;
+@alert-warning-text:          #fff;
+@alert-warning-border:        rgba(0,0,0,.1);
+
+@alert-danger-bg:             @brand-danger;
+@alert-danger-text:           #fff;
+@alert-danger-border:         rgba(0,0,0,.1);
+
+
+//== Progress bars
+//
+//##
+
+//** Background color of the whole progress component
+@progress-bg:                 #f1f1f1;
+//** Progress bar text color
+@progress-bar-color:          #fff;
+//** Variable for setting rounded corners on progress bar.
+@progress-border-radius:      @border-radius-base;
+
+//** Default progress bar color
+@progress-bar-bg:             @brand-primary;
+//** Success progress bar color
+@progress-bar-success-bg:     @brand-success;
+//** Warning progress bar color
+@progress-bar-warning-bg:     @brand-warning;
+//** Danger progress bar color
+@progress-bar-danger-bg:      @brand-danger;
+//** Info progress bar color
+@progress-bar-info-bg:        @brand-info;
+
+
+//== List group
+//
+//##
+
+//** Background color on `.list-group-item`
+@list-group-bg:                 #fff;
+//** `.list-group-item` border color
+@list-group-border:             @gray-light;
+//** List group border radius
+@list-group-border-radius:      @border-radius-base;
+
+//** Background color of single list items on hover
+@list-group-hover-bg:           #fafbfc;
+//** Text color of active list items
+@list-group-active-color:       @component-active-color;
+//** Background color of active list items
+@list-group-active-bg:          @component-active-bg;
+//** Border color of active list elements
+@list-group-active-border:      @list-group-active-bg;
+//** Text color for content within active list items
+@list-group-active-text-color:  lighten(@list-group-active-bg, 40%);
+
+//** Text color of disabled list items
+@list-group-disabled-color:      @gray-light;
+//** Background color of disabled list items
+@list-group-disabled-bg:         @gray-lighter;
+//** Text color for content within disabled list items
+@list-group-disabled-text-color: @list-group-disabled-color;
+
+@list-group-link-color:         #555;
+@list-group-link-hover-color:   @list-group-link-color;
+@list-group-link-heading-color: #333;
+
+
+//== Panels
+//
+//##
+@panel-global-border:         #cfdbe2;
+
+@panel-bg:                    #fff;
+@panel-body-padding:          15px;
+@panel-heading-padding:       10px 15px;
+@panel-footer-padding:        @panel-heading-padding;
+@panel-border-radius:         @border-radius-base;
+
+//** Border color for elements within panels
+@panel-inner-border:          #eee;
+@panel-footer-bg:             #fafafa;
+
+@panel-default-text:          #444;
+@panel-default-border:        @panel-global-border;
+@panel-default-heading-bg:    #fff;
+
+@panel-primary-text:          #fff;
+@panel-primary-border:        @panel-global-border;
+@panel-primary-heading-bg:    @brand-primary;
+
+@panel-success-text:          #fff;
+@panel-success-border:        @panel-global-border;
+@panel-success-heading-bg:    @brand-success;
+
+@panel-info-text:             #fff;
+@panel-info-border:           @panel-global-border;
+@panel-info-heading-bg:       @brand-info;
+
+@panel-warning-text:          #fff;
+@panel-warning-border:        @panel-global-border;
+@panel-warning-heading-bg:    @brand-warning;
+
+@panel-danger-text:           #fff;
+@panel-danger-border:         @panel-global-border;
+@panel-danger-heading-bg:     @brand-danger;
+
+
+//== Thumbnails
+//
+//##
+
+//** Padding around the thumbnail image
+@thumbnail-padding:           2px;
+//** Thumbnail background color
+@thumbnail-bg:                #e1e2e3;
+//** Thumbnail border color
+@thumbnail-border:            #e1e2e3;
+//** Thumbnail border radius
+@thumbnail-border-radius:     @border-radius-small;
+
+//** Custom text color for thumbnail captions
+@thumbnail-caption-color:     @text-color;
+//** Padding around the thumbnail caption
+@thumbnail-caption-padding:   9px;
+
+
+//== Wells
+//
+//##
+
+@well-bg:                     #fff;
+@well-border:                 darken(@well-bg, 7%);
+
+
+//== Badges
+//
+//##
+
+@badge-color:                 #fff;
+//** Linked badge text color on hover
+@badge-link-hover-color:      #fff;
+@badge-bg:                    @gray-light;
+
+//** Badge text color in active nav link
+@badge-active-color:          @link-color;
+//** Badge background color in active nav link
+@badge-active-bg:             #fff;
+
+@badge-font-weight:           bold;
+@badge-line-height:           1;
+@badge-border-radius:         10px;
+
+
+//== Breadcrumbs
+//
+//##
+
+@breadcrumb-padding-vertical:   12px;
+@breadcrumb-padding-horizontal: 15px;
+//** Breadcrumb background color
+@breadcrumb-bg:                 #fafafa;
+//** Breadcrumb text color
+@breadcrumb-color:              #c1c2c3;
+//** Text color of current page in the breadcrumb
+@breadcrumb-active-color:       @text-color;
+//** Textual separator for between breadcrumb elements
+@breadcrumb-separator:          ">";
+
+
+//== Carousel
+//
+//##
+
+@carousel-text-shadow:                        0 1px 2px rgba(0,0,0,.6);
+
+@carousel-control-color:                      #fff;
+@carousel-control-width:                      15%;
+@carousel-control-opacity:                    .5;
+@carousel-control-font-size:                  20px;
+
+@carousel-indicator-active-bg:                #fff;
+@carousel-indicator-border-color:             #fff;
+
+@carousel-caption-color:                      #fff;
+
+
+//== Close
+//
+//##
+
+@close-font-weight:           bold;
+@close-color:                 #000;
+@close-text-shadow:           0 1px 0 #fff;
+
+
+//== Code
+//
+//##
+
+@code-color:                  #c7254e;
+@code-bg:                     #f9f2f4;
+
+@kbd-color:                   #fff;
+@kbd-bg:                      #333;
+
+@pre-bg:                      #f5f5f5;
+@pre-color:                   @gray-dark;
+@pre-border-color:            #ccc;
+@pre-scrollable-max-height:   340px;
+
+
+//== Type
+//
+//##
+
+//** Horizontal offset for forms and lists.
+@component-offset-horizontal: 180px;
+//** Text muted color
+@text-muted:                  #909FA7;
+//** Abbreviations and acronyms border color
+@abbr-border-color:           @gray-dark;
+//** Headings small color
+@headings-small-color:        @gray-dark;
+//** Blockquote small color
+@blockquote-small-color:      @gray-dark;
+//** Blockquote font size
+@blockquote-font-size:        (@font-size-base * 1.25);
+//** Blockquote border color
+@blockquote-border-color:     @gray-lighter;
+//** Page header border color
+@page-header-border-color:    @gray-lighter;
+//** Width of horizontal description list titles
+@dl-horizontal-offset:        @component-offset-horizontal;
+//** Horizontal line color.
+@hr-border:                   @gray-lighter;
+
+
+
+//
+// Variables
+// --------------------------------------------------
+
+
+//== Colors
+//
+//## Gray and brand colors for use across Bootstrap.
+
+// Redefined Gray colors for theme
+@gray-darker:            #232735;
+@gray-dark:              #3a3f51;
+@gray:                   #dde6e9;
+@gray-light:             #e4eaec;
+@gray-lighter:           #edf1f2;
+
+// Classic brand colors
+
+@brand-primary:          #5d9cec;
+@brand-success:          #27c24c;
+@brand-info:             #23b7e5;
+@brand-warning:          #ff902b;
+@brand-danger:           #f05050;
+
+// New brand colors
+
+@brand-inverse:          #131e26;
+@brand-green:            #37bc9b;
+@brand-btn-color-a:      #71b838;
+@brand-pink:             #f532e5;
+@brand-purple:           #7266ba;
+@brand-dark:             #3a3f51;
+@brand-yellow:           #fad732;
+
+// DtDream brand colors
+
+@brand-dtblue:   #6ecff6;
+@brand-dtgreen:  #b6da9d;
+@brand-dtgray:   #505052;
+
+
+// Brand color Variants
+
+@amountOfLight: 10%;
+
+@brand-primary-light:          lighten(@brand-primary, @amountOfLight);
+@brand-success-light:          lighten(@brand-success, @amountOfLight);
+@brand-info-light:             lighten(@brand-info, @amountOfLight);
+@brand-warning-light:          lighten(@brand-warning, @amountOfLight);
+@brand-danger-light:           lighten(@brand-danger, @amountOfLight);
+@brand-inverse-light:          lighten(@brand-inverse, @amountOfLight);
+@brand-green-light:            lighten(@brand-green, @amountOfLight);
+@brand-pink-light:             lighten(@brand-pink, @amountOfLight);
+@brand-purple-light:           lighten(@brand-purple, @amountOfLight);
+@brand-dark-light:             lighten(@brand-dark, @amountOfLight);
+@brand-yellow-light:           lighten(@brand-yellow, @amountOfLight);
+@brand-dtblue-light:           lighten(@brand-dtblue, @amountOfLight);
+@brand-dtgreen-light:          lighten(@brand-dtgreen, @amountOfLight);
+@brand-dtgray-light:           lighten(@brand-dtgray, @amountOfLight);
+
+@brand-primary-dark:           darken(@brand-primary, @amountOfLight);
+@brand-success-dark:           darken(@brand-success, @amountOfLight);
+@brand-info-dark:              darken(@brand-info, @amountOfLight);
+@brand-warning-dark:           darken(@brand-warning, @amountOfLight);
+@brand-danger-dark:            darken(@brand-danger, @amountOfLight);
+@brand-inverse-dark:           darken(@brand-inverse, @amountOfLight);
+@brand-green-dark:             darken(@brand-green, @amountOfLight);
+@brand-pink-dark:              darken(@brand-pink, @amountOfLight);
+@brand-purple-dark:            darken(@brand-purple, @amountOfLight);
+@brand-dark-dark:              darken(@brand-dark, @amountOfLight);
+@brand-yellow-dark:            darken(@brand-yellow, @amountOfLight);
+@brand-dtblue-dark:            darken(@brand-dtblue, @amountOfLight);
+@brand-dtgreen-dark:           darken(@brand-dtgreen, @amountOfLight);
+@brand-dtgray-dark:            darken(@brand-dtgray, @amountOfLight);
+
+// Global status color , use hard code for the present . We will use brand color with standardized in the future.
+@brand-status-error:           rgb(250, 49, 49);//#FA3131
+@brand-status-critical:        rgb(252,138,48);//#FC8A30
+@brand-status-warning:         rgb(253,231,48);//#FDE730
+@brand-status-info:            rgb(110,207,246);//#6ECFF6
+@brand-status-pending:         rgb(111, 110, 117, 0.39);//#6F6E75
+@brand-status-ok:              #6FBA2C;
+
+//== Scaffolding
+//
+//## Settings for some of the most global styles.
+
+//** Background color for `<body>`.
+@body-bg:               #f5f7fa;
+//** Global text color on `<body>`.
+@text-color:            #515253;
+
+//** Global textual link color.
+@link-color:            @brand-primary;
+//** Link hover color set via `darken()` function.
+@link-hover-color:      darken(@link-color, 15%);
+//** Link hover decoration.
+@link-hover-decoration: underline;
+
+
+//== Typography
+//
+//## Font, line-height, and color for body text, headings, and more.
+
+@font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-serif:       Georgia, "Times New Roman", Times, serif;
+//** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
+@font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
+@font-family-base:        @font-family-sans-serif;
+
+@font-size-base:          14px;
+@font-size-large:         ceil((@font-size-base * 1.25)); // ~18px
+@font-size-small:         ceil((@font-size-base * 0.85)); // ~12px
+
+@font-size-h1:            floor((@font-size-base * 2.6)); // ~36px
+@font-size-h2:            floor((@font-size-base * 2.15)); // ~30px
+@font-size-h3:            ceil((@font-size-base * 1.7)); // ~24px
+@font-size-h4:            ceil((@font-size-base * 1.25)); // ~18px
+@font-size-h5:            @font-size-base;
+@font-size-h6:            ceil((@font-size-base * 0.85)); // ~12px
+
+//** Unit-less `line-height` for use in components like buttons.
+@line-height-base:        1.528571429; // 20/14
+//** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
+@line-height-computed:    floor((@font-size-base * @line-height-base)); // ~20px
+
+//** By default, this inherits from the `<body>`.
+@headings-font-family:    inherit;
+@headings-font-weight:    500;
+@headings-line-height:    1.1;
+@headings-color:          inherit;
+
+
+//== Iconography
+//
+//## Specify custom location and filename of the included Glyphicons icon font. Useful for those including Bootstrap via Bower.
+
+//** Load fonts from this directory.
+@icon-font-path:          "../fonts/";
+//** File name for all font files.
+@icon-font-name:          "glyphicons-halflings-regular";
+//** Element ID within SVG icon file.
+@icon-font-svg-id:        "glyphicons_halflingsregular";
+
+
+//== Components
+//
+//## Define common padding and border radius sizes and more. Values based on 14px text and 1.428 line-height (~20px to start).
+
+@padding-base-vertical:     6px;
+@padding-base-horizontal:   16px;
+
+@padding-large-vertical:    10px;
+@padding-large-horizontal:  20px;
+
+@padding-small-vertical:    5px;
+@padding-small-horizontal:  10px;
+
+@padding-xs-vertical:       1px;
+@padding-xs-horizontal:     5px;
+
+@line-height-large:         1.33;
+@line-height-small:         1.5;
+
+@border-radius-base:        4px;
+@border-radius-large:       6px;
+@border-radius-small:       3px;
+
+//** Global color for active items (e.g., navs or dropdowns).
+@component-active-color:    #fff;
+//** Global background color for active items (e.g., navs or dropdowns).
+@component-active-bg:       @brand-primary;
+
+//** Width of the `border` for generating carets that indicator dropdowns.
+@caret-width-base:          4px;
+//** Carets increase slightly in size for larger components.
+@caret-width-large:         5px;
+
+
+//== Tables
+//
+//## Customizes the `.table` component with basic values, each used across all table variations.
+
+//** Padding for `<th>`s and `<td>`s.
+@table-cell-padding:            8px;
+//** Padding for cells in `.table-condensed`.
+@table-condensed-cell-padding:  5px;
+
+//** Default background color used for all tables.
+@table-bg:                      transparent;
+//** Background color used for `.table-striped`.
+@table-bg-accent:               #fafbfc;
+//** Background color used for `.table-hover`.
+@table-bg-hover:                #fafbfc;
+@table-bg-active:               @table-bg-hover;
+
+//** Border color for table and cell borders.
+@table-border-color:            #eee;
+
+
+//== Buttons
+//
+//## For each of Bootstrap's buttons, define text, background and border color.
+
+@btn-font-weight:                normal;
+
+@btn-default-color:              #333;
+@btn-default-bg:                 #fff;
+//@btn-default-border:             transparent;
+@btn-default-border:              #eaeaea;
+
+@btn-primary-color:              #fff;
+@btn-primary-bg:                 @brand-primary;
+@btn-primary-border:             darken(@btn-primary-bg, 1%);
+
+@btn-success-color:              #fff;
+@btn-success-bg:                 @brand-success;
+@btn-success-border:             darken(@btn-success-bg, 1%);
+
+@btn-info-color:                 #fff;
+@btn-info-bg:                    @brand-info;
+@btn-info-border:                darken(@btn-info-bg, 1%);
+
+@btn-warning-color:              #fff;
+@btn-warning-bg:                 @brand-warning;
+@btn-warning-border:             darken(@btn-warning-bg, 1%);
+
+@btn-danger-color:               #fff;
+@btn-danger-bg:                  @brand-danger;
+@btn-danger-border:              darken(@btn-danger-bg, 1%);
+
+@btn-link-disabled-color:        @gray-light;
+
+
+//== Forms
+//
+//##
+
+//** `<input>` background color
+@input-bg:                       #fff;
+//** `<input disabled>` background color
+@input-bg-disabled:              @gray-lighter;
+
+//** Text color for `<input>`s
+@input-color:                    @gray-dark;
+//** `<input>` border color
+@input-border:                   @gray;
+// TODO: Rename `@input-border-radius` to `@input-border-radius-base` in v4
+//** Default `.form-control` border radius
+@input-border-radius:            @border-radius-base;
+//** Large `.form-control` border radius
+@input-border-radius-large:      @border-radius-large;
+//** Small `.form-control` border radius
+@input-border-radius-small:      @border-radius-small;
+
+//** Border color for inputs on focus
+@input-border-focus:             #66afe9;
+
+//** Placeholder text color
+@input-color-placeholder:        #b7bac9;
+
+//** Default `.form-control` height
+@input-height-base:              (@line-height-computed + (@padding-base-vertical * 2) + 2);
+//** Large `.form-control` height
+@input-height-large:             (ceil(@font-size-large * @line-height-large) + (@padding-large-vertical * 2) + 2);
+//** Small `.form-control` height
+@input-height-small:             (floor(@font-size-small * @line-height-small) + (@padding-small-vertical * 2) + 2);
+
+//** `.form-group` margin
+@form-group-margin-bottom:       15px;
+
+@legend-color:                   @gray-dark;
+@legend-border-color:            #e5e5e5;
+
+//** Background color for textual input addons
+@input-group-addon-bg:           @gray-lighter;
+//** Border color for textual input addons
+@input-group-addon-border-color: @input-border;
+
+//** Disabled cursor for form controls and buttons.
+@cursor-disabled:                not-allowed;
+
+//== Dropdowns
+//
+//## Dropdown menu container and contents.
+
+//** Background for the dropdown menu.
+@dropdown-bg:                    #fff;
+//** Dropdown menu `border-color`.
+@dropdown-border:                #e1e1e1;
+//** Dropdown menu `border-color` **for IE8**.
+@dropdown-fallback-border:       #ccc;
+//** Divider color for between dropdown items.
+@dropdown-divider-bg:            #e5e5e5;
+
+//** Dropdown link text color.
+@dropdown-link-color:            #5f5f5f;
+//** Hover color for dropdown links.
+@dropdown-link-hover-color:      darken(@gray-dark, 5%);
+//** Hover background for dropdown links.
+@dropdown-link-hover-bg:         #fafbfc;
+
+//** Active dropdown menu item text color.
+@dropdown-link-active-color:     @component-active-color;
+//** Active dropdown menu item background color.
+@dropdown-link-active-bg:        @component-active-bg;
+
+//** Disabled dropdown menu item background color.
+@dropdown-link-disabled-color:   @gray-light;
+
+//** Text color for headers within dropdown menus.
+@dropdown-header-color:          @gray-light;
+
+//** Deprecated `@dropdown-caret-color` as of v3.1.0
+@dropdown-caret-color:           #000;
+
+
+//-- Z-index master list
+//
+// Warning: Avoid customizing these values. They're used for a bird's eye view
+// of components dependent on the z-axis and are designed to all work together.
+//
+// Note: These variables are not generated into the Customizer.
+
+@zindex-navbar:            1000;
+@zindex-dropdown:          1000;
+@zindex-popover:           1060;
+@zindex-tooltip:           1070;
+@zindex-navbar-fixed:      1030;
+@zindex-modal-background:  1040;
+@zindex-modal:             1050;
+
+
+//== Media queries breakpoints
+//
+//## Define the breakpoints at which your layout will change, adapting to different screen sizes.
+
+// Extra small screen / phone
+//** Deprecated `@screen-xs` as of v3.0.1
+@screen-xs:                  480px;
+//** Deprecated `@screen-xs-min` as of v3.2.0
+@screen-xs-min:              @screen-xs;
+//** Deprecated `@screen-phone` as of v3.0.1
+@screen-phone:               @screen-xs-min;
+
+// Small screen / tablet
+//** Deprecated `@screen-sm` as of v3.0.1
+@screen-sm:                  768px;
+@screen-sm-min:              @screen-sm;
+//** Deprecated `@screen-tablet` as of v3.0.1
+@screen-tablet:              @screen-sm-min;
+
+// Medium screen / desktop
+//** Deprecated `@screen-md` as of v3.0.1
+@screen-md:                  992px;
+@screen-md-min:              @screen-md;
+//** Deprecated `@screen-desktop` as of v3.0.1
+@screen-desktop:             @screen-md-min;
+
+// Large screen / wide desktop
+//** Deprecated `@screen-lg` as of v3.0.1
+@screen-lg:                  1200px;
+@screen-lg-min:              @screen-lg;
+//** Deprecated `@screen-lg-desktop` as of v3.0.1
+@screen-lg-desktop:          @screen-lg-min;
+
+// So media queries don't overlap when required, provide a maximum
+@screen-xs-max:              (@screen-sm-min - 1);
+@screen-sm-max:              (@screen-md-min - 1);
+@screen-md-max:              (@screen-lg-min - 1);
+
+
+//== Grid system
+//
+//## Define your custom responsive grid.
+
+//** Number of columns in the grid.
+@grid-columns:              12;
+//** Padding between columns. Gets divided in half for the left and right.
+@grid-gutter-width:         30px;
+// Navbar collapse
+//** Point at which the navbar becomes uncollapsed.
+@grid-float-breakpoint:     @screen-sm-min;
+//** Point at which the navbar begins collapsing.
+@grid-float-breakpoint-max: (@grid-float-breakpoint - 1);
+
+
+//== Container sizes
+//
+//## Define the maximum width of `.container` for different screen sizes.
+
+// Small screen / tablet
+@container-tablet:             ((720px + @grid-gutter-width));
+//** For `@screen-sm-min` and up.
+@container-sm:                 @container-tablet;
+
+// Medium screen / desktop
+@container-desktop:            ((940px + @grid-gutter-width));
+//** For `@screen-md-min` and up.
+@container-md:                 @container-desktop;
+
+// Large screen / wide desktop
+@container-large-desktop:      ((1140px + @grid-gutter-width));
+//** For `@screen-lg-min` and up.
+@container-lg:                 @container-large-desktop;
+
+
+//== Navbar
+//
+//##
+
+// Basics of a navbar
+@navbar-height:                    55px;
+@navbar-margin-bottom:             @line-height-computed;
+@navbar-border-radius:             @border-radius-base;
+@navbar-padding-horizontal:        floor((@grid-gutter-width / 2));
+@navbar-padding-vertical:          ((@navbar-height - @line-height-computed) / 2);
+@navbar-collapse-max-height:       340px;
+
+@navbar-default-color:             #777;
+@navbar-default-bg:                #f8f8f8;
+@navbar-default-border:            darken(@navbar-default-bg, 6.5%);
+
+// Navbar links
+@navbar-default-link-color:                #fff;
+@navbar-default-link-hover-color:          #ddd;
+@navbar-default-link-hover-bg:             transparent;
+@navbar-default-link-active-color:         #ddd;
+@navbar-default-link-active-bg:            darken(@navbar-default-bg, 6.5%);
+@navbar-default-link-disabled-color:       #ccc;
+@navbar-default-link-disabled-bg:          transparent;
+
+// Navbar brand label
+@navbar-default-brand-color:               @navbar-default-link-color;
+@navbar-default-brand-hover-color:         darken(@navbar-default-brand-color, 10%);
+@navbar-default-brand-hover-bg:            transparent;
+
+// Navbar toggle
+@navbar-default-toggle-hover-bg:           #ddd;
+@navbar-default-toggle-icon-bar-bg:        #888;
+@navbar-default-toggle-border-color:       #ddd;
+
+
+// Inverted navbar
+// Reset inverted navbar basics
+@navbar-inverse-color:                      @gray-light;
+@navbar-inverse-bg:                         #222;
+@navbar-inverse-border:                     darken(@navbar-inverse-bg, 10%);
+
+// Inverted navbar links
+@navbar-inverse-link-color:                 @gray-light;
+@navbar-inverse-link-hover-color:           #fff;
+@navbar-inverse-link-hover-bg:              transparent;
+@navbar-inverse-link-active-color:          @navbar-inverse-link-hover-color;
+@navbar-inverse-link-active-bg:             darken(@navbar-inverse-bg, 10%);
+@navbar-inverse-link-disabled-color:        #444;
+@navbar-inverse-link-disabled-bg:           transparent;
+
+// Inverted navbar brand label
+@navbar-inverse-brand-color:                @navbar-inverse-link-color;
+@navbar-inverse-brand-hover-color:          #fff;
+@navbar-inverse-brand-hover-bg:             transparent;
+
+// Inverted navbar toggle
+@navbar-inverse-toggle-hover-bg:            #333;
+@navbar-inverse-toggle-icon-bar-bg:         #fff;
+@navbar-inverse-toggle-border-color:        #333;
+
+
+//== Navs
+//
+//##
+
+//=== Shared nav styles
+@nav-link-padding:                          10px 15px;
+@nav-link-hover-bg:                         transparent;
+
+@nav-disabled-link-color:                   @gray-light;
+@nav-disabled-link-hover-color:             @gray-light;
+
+@nav-open-link-hover-color:                 #fff;
+
+//== Tabs
+@nav-tabs-border-color:                     #ddd;
+
+@nav-tabs-link-hover-border-color:          #ddd;
+
+@nav-tabs-active-link-hover-bg:             #fff;
+@nav-tabs-active-link-hover-color:          @gray;
+@nav-tabs-active-link-hover-border-color:   #ddd;
+
+@nav-tabs-justified-link-border-color:            #ddd;
+@nav-tabs-justified-active-link-border-color:     @body-bg;
+
+//== Pills
+@nav-pills-border-radius:                   @border-radius-base;
+@nav-pills-active-link-hover-bg:            @component-active-bg;
+@nav-pills-active-link-hover-color:         @component-active-color;
+
+
+//== Pagination
+//
+//##
+
+@pagination-color:                     @text-color;
+@pagination-bg:                        #fff;
+@pagination-border:                    #eee;
+
+@pagination-hover-color:               @link-hover-color;
+@pagination-hover-bg:                  #fafafa;
+@pagination-hover-border:              #eee;
+
+@pagination-active-color:              #fff;
+@pagination-active-bg:                 @brand-primary;
+@pagination-active-border:             @brand-primary;
+
+@pagination-disabled-color:            @gray-light;
+@pagination-disabled-bg:               #fff;
+@pagination-disabled-border:           #eee;
+
+
+//== Pager
+//
+//##
+
+@pager-bg:                             @pagination-bg;
+@pager-border:                         @pagination-border;
+@pager-border-radius:                  15px;
+
+@pager-hover-bg:                       @pagination-hover-bg;
+
+@pager-active-bg:                      @pagination-active-bg;
+@pager-active-color:                   @pagination-active-color;
+
+@pager-disabled-color:                 @pagination-disabled-color;
+
+
+//== Jumbotron
+//
+//##
+
+@jumbotron-padding:              30px;
+@jumbotron-color:                inherit;
+@jumbotron-bg:                   #fcfcfc;
+@jumbotron-heading-color:        inherit;
+@jumbotron-font-size:            ceil((@font-size-base * 1.5));
+
+
+//== Form states and alerts
+//
+//## Define colors for form feedback states and, by default, alerts.
+
+@state-success-text:             @brand-success;
+@state-success-bg:               #dff0d8;
+@state-success-border:           darken(spin(@state-success-bg, -10), 5%);
+
+@state-info-text:                @brand-info; 
+@state-info-bg:                  #d9edf7;
+@state-info-border:              darken(spin(@state-info-bg, -10), 7%);
+
+@state-warning-text:             @brand-warning;
+@state-warning-bg:               #fcf8e3;
+@state-warning-border:           darken(spin(@state-warning-bg, -10), 5%);
+
+@state-danger-text:              @brand-danger;
+@state-danger-bg:                #f2dede;
+@state-danger-border:            darken(spin(@state-danger-bg, -10), 5%);
+
+
+//== Tooltips
+//
+//##
+
+//** Tooltip max width
+@tooltip-max-width:           200px;
+//** Tooltip text color
+@tooltip-color:               #fff;
+//** Tooltip background color
+@tooltip-bg:                  #222;
+@tooltip-opacity:             .9;
+
+//** Tooltip arrow width
+@tooltip-arrow-width:         5px;
+//** Tooltip arrow color
+@tooltip-arrow-color:         @tooltip-bg;
+
+
+//== prompt
+//
+//##
+
+//** prompttip width
+@prompt-tip-width:           360px;
+//** prompt text color
+@prompt-tip-color:           #373d41;
+//** prompt background color
+@prompt-tip-bg:              #fff;
+@prompt-tip-opacity:         1;
+
+//** prompt arrow color
+@prompt-tip-arrow-color:     @prompt-tip-bg;
+
+
+
+//== Popovers
+//
+//##
+
+//** Popover body background color
+@popover-bg:                          #fff;
+//** Popover maximum width
+@popover-max-width:                   276px;
+//** Popover border color
+@popover-border-color:                #e1e1e1;
+//** Popover fallback border color
+@popover-fallback-border-color:       #ccc;
+
+//** Popover title background color
+@popover-title-bg:                    #fafafa;
+
+//** Popover arrow width
+@popover-arrow-width:                 10px;
+//** Popover arrow color
+@popover-arrow-color:                 #fafafa;
+
+//** Popover outer arrow width
+@popover-arrow-outer-width:           (@popover-arrow-width + 1);
+//** Popover outer arrow color
+@popover-arrow-outer-color:           @popover-border-color;;
+//** Popover outer arrow fallback color
+@popover-arrow-outer-fallback-color:  darken(@popover-fallback-border-color, 20%);
+
+
+//== Labels
+//
+//##
+
+//** Default label background color
+@label-default-bg:            @gray-light;
+//** Primary label background color
+@label-primary-bg:            @brand-primary;
+//** Success label background color
+@label-success-bg:            @brand-success;
+//** Info label background color
+@label-info-bg:               @brand-info;
+//** Warning label background color
+@label-warning-bg:            @brand-warning;
+//** Danger label background color
+@label-danger-bg:             @brand-danger;
+
+//** Default label text color
+@label-color:                 #fff;
+//** Default text color of a linked label
+@label-link-hover-color:      #fff;
+
+
+//== Modals
+//
+//##
+
+//** Padding applied to the modal body
+@modal-inner-padding:         15px;
+
+//** Padding applied to the modal title
+@modal-title-padding:         15px;
+//** Modal title line-height
+@modal-title-line-height:     @line-height-base;
+
+//** Background color of modal content area
+@modal-content-bg:                             #fff;
+//** Modal content border color
+@modal-content-border-color:                   rgba(0,0,0,.2);
+//** Modal content border color **for IE8**
+@modal-content-fallback-border-color:          #999;
+
+//** Modal backdrop background color
+@modal-backdrop-bg:           #000;
+//** Modal backdrop opacity
+@modal-backdrop-opacity:      .5;
+//** Modal header border color
+@modal-header-border-color:   #e5e5e5;
+//** Modal footer border color
+@modal-footer-border-color:   @modal-header-border-color;
+
+@modal-xlg:                   1200px;
+@modal-lg:                    900px;
+@modal-md:                    600px;
+@modal-sm:                    300px;
+@modal-auto:                  auto;
+@modal-big:                   900px;
+
+//== Alerts
+//
+//## Define alert colors, border radius, and padding.
+
+@alert-padding:               8px;
+@alert-border-radius:         @border-radius-small;
+@alert-link-font-weight:      bold;
+
+@alert-success-bg:            @brand-success;
+@alert-success-text:          #fff;
+@alert-success-border:        rgba(0,0,0,.1);
+
+@alert-info-bg:               @brand-info;
+@alert-info-text:             #fff;
+@alert-info-border:           rgba(0,0,0,.1);
+
+@alert-warning-bg:            @brand-warning;
+@alert-warning-text:          #fff;
+@alert-warning-border:        rgba(0,0,0,.1);
+
+@alert-danger-bg:             @brand-danger;
+@alert-danger-text:           #fff;
+@alert-danger-border:         rgba(0,0,0,.1);
+
+
+//== Progress bars
+//
+//##
+
+//** Background color of the whole progress component
+@progress-bg:                 #f1f1f1;
+//** Progress bar text color
+@progress-bar-color:          #fff;
+//** Variable for setting rounded corners on progress bar.
+@progress-border-radius:      @border-radius-base;
+
+//** Default progress bar color
+@progress-bar-bg:             @brand-primary;
+//** Success progress bar color
+@progress-bar-success-bg:     @brand-success;
+//** Warning progress bar color
+@progress-bar-warning-bg:     @brand-warning;
+//** Danger progress bar color
+@progress-bar-danger-bg:      @brand-danger;
+//** Info progress bar color
+@progress-bar-info-bg:        @brand-info;
+
+
+//== List group
+//
+//##
+
+//** Background color on `.list-group-item`
+@list-group-bg:                 #fff;
+//** `.list-group-item` border color
+@list-group-border:             @gray-light;
+//** List group border radius
+@list-group-border-radius:      @border-radius-base;
+
+//** Background color of single list items on hover
+@list-group-hover-bg:           #fafbfc;
+//** Text color of active list items
+@list-group-active-color:       @component-active-color;
+//** Background color of active list items
+@list-group-active-bg:          @component-active-bg;
+//** Border color of active list elements
+@list-group-active-border:      @list-group-active-bg;
+//** Text color for content within active list items
+@list-group-active-text-color:  lighten(@list-group-active-bg, 40%);
+
+//** Text color of disabled list items
+@list-group-disabled-color:      @gray-light;
+//** Background color of disabled list items
+@list-group-disabled-bg:         @gray-lighter;
+//** Text color for content within disabled list items
+@list-group-disabled-text-color: @list-group-disabled-color;
+
+@list-group-link-color:         #555;
+@list-group-link-hover-color:   @list-group-link-color;
+@list-group-link-heading-color: #333;
+
+
+//== Panels
+//
+//##
+@panel-global-border:         #cfdbe2;
+
+@panel-bg:                    #fff;
+@panel-body-padding:          15px;
+@panel-heading-padding:       10px 15px;
+@panel-footer-padding:        @panel-heading-padding;
+@panel-border-radius:         @border-radius-base;
+
+//** Border color for elements within panels
+@panel-inner-border:          #eee;
+@panel-footer-bg:             #fafafa;
+
+@panel-default-text:          #444;
+@panel-default-border:        @panel-global-border;
+@panel-default-heading-bg:    #fff;
+
+@panel-primary-text:          #fff;
+@panel-primary-border:        @panel-global-border;
+@panel-primary-heading-bg:    @brand-primary;
+
+@panel-success-text:          #fff;
+@panel-success-border:        @panel-global-border;
+@panel-success-heading-bg:    @brand-success;
+
+@panel-info-text:             #fff;
+@panel-info-border:           @panel-global-border;
+@panel-info-heading-bg:       @brand-info;
+
+@panel-warning-text:          #fff;
+@panel-warning-border:        @panel-global-border;
+@panel-warning-heading-bg:    @brand-warning;
+
+@panel-danger-text:           #fff;
+@panel-danger-border:         @panel-global-border;
+@panel-danger-heading-bg:     @brand-danger;
+
+
+//== Thumbnails
+//
+//##
+
+//** Padding around the thumbnail image
+@thumbnail-padding:           2px;
+//** Thumbnail background color
+@thumbnail-bg:                #e1e2e3;
+//** Thumbnail border color
+@thumbnail-border:            #e1e2e3;
+//** Thumbnail border radius
+@thumbnail-border-radius:     @border-radius-small;
+
+//** Custom text color for thumbnail captions
+@thumbnail-caption-color:     @text-color;
+//** Padding around the thumbnail caption
+@thumbnail-caption-padding:   9px;
+
+
+//== Wells
+//
+//##
+
+@well-bg:                     #fff;
+@well-border:                 darken(@well-bg, 7%);
+
+
+//== Badges
+//
+//##
+
+@badge-color:                 #fff;
+//** Linked badge text color on hover
+@badge-link-hover-color:      #fff;
+@badge-bg:                    @gray-light;
+
+//** Badge text color in active nav link
+@badge-active-color:          @link-color;
+//** Badge background color in active nav link
+@badge-active-bg:             #fff;
+
+@badge-font-weight:           bold;
+@badge-line-height:           1;
+@badge-border-radius:         10px;
+
+
+//== Breadcrumbs
+//
+//##
+
+@breadcrumb-padding-vertical:   12px;
+@breadcrumb-padding-horizontal: 15px;
+//** Breadcrumb background color
+@breadcrumb-bg:                 #fafafa;
+//** Breadcrumb text color
+@breadcrumb-color:              #c1c2c3;
+//** Text color of current page in the breadcrumb
+@breadcrumb-active-color:       @text-color;
+//** Textual separator for between breadcrumb elements
+@breadcrumb-separator:          ">";
+
+
+//== Carousel
+//
+//##
+
+@carousel-text-shadow:                        0 1px 2px rgba(0,0,0,.6);
+
+@carousel-control-color:                      #fff;
+@carousel-control-width:                      15%;
+@carousel-control-opacity:                    .5;
+@carousel-control-font-size:                  20px;
+
+@carousel-indicator-active-bg:                #fff;
+@carousel-indicator-border-color:             #fff;
+
+@carousel-caption-color:                      #fff;
+
+
+//== Close
+//
+//##
+
+@close-font-weight:           bold;
+@close-color:                 #000;
+@close-text-shadow:           0 1px 0 #fff;
+
+
+//== Code
+//
+//##
+
+@code-color:                  #c7254e;
+@code-bg:                     #f9f2f4;
+
+@kbd-color:                   #fff;
+@kbd-bg:                      #333;
+
+@pre-bg:                      #f5f5f5;
+@pre-color:                   @gray-dark;
+@pre-border-color:            #ccc;
+@pre-scrollable-max-height:   340px;
+
+
+//== Type
+//
+//##
+
+//** Horizontal offset for forms and lists.
+@component-offset-horizontal: 180px;
+//** Text muted color
+@text-muted:                  #909FA7;
+//** Abbreviations and acronyms border color
+@abbr-border-color:           @gray-dark;
+//** Headings small color
+@headings-small-color:        @gray-dark;
+//** Blockquote small color
+@blockquote-small-color:      @gray-dark;
+//** Blockquote font size
+@blockquote-font-size:        (@font-size-base * 1.25);
+//** Blockquote border color
+@blockquote-border-color:     @gray-lighter;
+//** Page header border color
+@page-header-border-color:    @gray-lighter;
+//** Width of horizontal description list titles
+@dl-horizontal-offset:        @component-offset-horizontal;
+//** Horizontal line color.
+@hr-border:                   @gray-lighter;
+
+
